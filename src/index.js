@@ -1,17 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+import PwButton from "./lib/design-system/component/pw-button";
+import IcPlus from "./lib/design-system/icons/IcPlus";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <PwButton kind="primary" prefix={<IcPlus />} suffix={<IcPlus />}>
+        New sale primary
+      </PwButton>
+      <PwButton
+        kind="primary"
+        backgroundColor="red"
+        color="white"
+        suffix={<IcPlus />}
+        prefix={<IcPlus />}
+      >
+        New sale primary
+      </PwButton>
+
+      <PwButton kind="secondary">Confirm</PwButton>
+      <PwButton kind="tertiary">Tertiary Button</PwButton>
+      <PwButton kind="floating" prefix={<IcPlus />}>
+        floating Button
+      </PwButton>
+    </div>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
