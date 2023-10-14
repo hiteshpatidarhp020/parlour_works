@@ -1,0 +1,13 @@
+.radiomain{
+    background-color: red;
+}
+.radiotext{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 21px;
+}
+.radioinput Form.Check:last-of-type {
+    color: rgba(204, 170, 109, 1) !important;
+    border-color: rgba(204, 170, 109, 1) !important;
+}
