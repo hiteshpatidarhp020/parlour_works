@@ -1,6 +1,5 @@
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import PwText from "../pw-text";
+import "./pw-modal.css";
 
 const PwModal = (props) => {
   const { render, ...modalProps } = props;
@@ -13,8 +12,7 @@ const PwModal = (props) => {
       backdrop="static"
       keyboard={false}
     >
-      <Modal.Header> {render()}</Modal.Header>
-      <Modal.Body></Modal.Body>
+      <Modal.Body> {render()}</Modal.Body>
     </Modal>
   );
 };
