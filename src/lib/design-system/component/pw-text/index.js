@@ -27,83 +27,83 @@ const theme = {
 const textStyles = {
   body_l_heading: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.body_l_medium || "15px"};
+    font-size: ${theme?.fontSizes?.body_l_heading || "15px"};
     font-weight: ${theme?.fontWeights?.heading || "700"};
   `,
   body_m_heading: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.body_m_medium || "14px"};
+    font-size: ${theme?.fontSizes?.body_m_heading || "14px"};
     font-weight: ${theme?.fontWeights?.heading || "700"};
 `,
   heading_l_medium: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_l || "30px"};
+    font-size: ${theme?.fontSizes?.heading_l_medium || "30px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
   heading_m_medium: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_m || "27px"};
+    font-size: ${theme?.fontSizes?.heading_m_medium || "27px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
   heading_s_medium: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_s || "22px"};
+    font-size: ${theme?.fontSizes?.heading_s_medium || "22px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
-  heading_s_medium: css`
+  heading_s_medi: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.heading_s_medium || "20px"};
+  font-size: ${theme?.fontSizes?.heading_s_medi || "20px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 body_l_medium: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_l || "18px"};
+  font-size: ${theme?.fontSizes?.body_l_medium || "18px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_m: css`
+body_m_me: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m || "17px"};
+  font-size: ${theme?.fontSizes?.body_m_me || "17px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 body_s_medium: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s || "16px"};
+  font-size: ${theme?.fontSizes?.body_s_medium || "16px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_m_medi: css`
+body_m_med: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m_medium || "14px"};
+  font-size: ${theme?.fontSizes?.body_m_med || "14px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 body_m_medium: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m_bold || "12px"};
+  font-size: ${theme?.fontSizes?.body_m_medium || "12px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_s_medium: css`
+body_s_med: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s_bold || "10px"};
+  font-size: ${theme?.fontSizes?.body_s_med || "10px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 
 heading_l_regular: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_l_medium || "25px"};
+    font-size: ${theme?.fontSizes?.heading_l_regular || "25px"};
     font-weight: ${theme?.fontWeights?.regular || "400"};
   `,
   heading_m_regular: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_m_medium || "24px"};
+    font-size: ${theme?.fontSizes?.heading_m_regular || "24px"};
     font-weight: ${theme?.fontWeights?.regular || "400"};
   `,
 heading_s_regular: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_s || "22px"};
+    font-size: ${theme?.fontSizes?.heading_s_regular || "22px"};
     font-weight: ${theme?.fontWeights?.regular || "400"};
   `,
-  heading_s_regular: css`
+  heading_s_reg: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.heading_s_medium || "20px"};
+  font-size: ${theme?.fontSizes?.heading_s_reg || "20px"};
   font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 body_l_regular: css`
@@ -113,27 +113,27 @@ body_l_regular: css`
 `,
 body_s_regular: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s || "16px"};
+  font-size: ${theme?.fontSizes?.body_s_regular || "16px"};
   font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 body_m_regular: css`
 font-family: "DM Sans";
-font-size: ${theme?.fontSizes?.body_m_medium || "14px"};
+font-size: ${theme?.fontSizes?.body_m_regular || "14px"};
 font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 body_s_regul: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s_medium || "13px"};
+  font-size: ${theme?.fontSizes?.body_s_regul || "13px"};
   font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 body_m_r: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m_bold || "12px"};
+  font-size: ${theme?.fontSizes?.body_m_r || "12px"};
   font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 body_s_reg: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s_bold || "10px"};
+  font-size: ${theme?.fontSizes?.body_s_reg || "10px"};
   font-weight: ${theme?.fontWeights?.regular || "400"};
 `,
 };
