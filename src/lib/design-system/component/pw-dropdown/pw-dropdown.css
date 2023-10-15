@@ -1,0 +1,33 @@
+.rotate-icon {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* right: 0; */
+  transition: transform 0.3s ease;
+  /* margin-left: 29px; */
+}
+
+.dropdown.show .rotate-icon {
+  transform: rotate(180deg);
+}
+.dropdown {
+  /* width: fit-content !important; */
+  /* position: relative; */
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-toggle {
+  border-radius: 6px !important;
+  background: #272732 !important;
+  width: 100% !important;
+  text-align: start !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.dropdown-menu {
+  width: 100% !important;
+  padding: 0;
+  min-width: fit-content !important;
+  /* background-color: red !important; */
+}
