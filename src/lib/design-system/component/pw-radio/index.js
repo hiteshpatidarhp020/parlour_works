@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+import "../pw-radio/pw-radio.css";
 
 const Radio = ({ labels, name }) => {
   return (
@@ -7,7 +8,7 @@ const Radio = ({ labels, name }) => {
       {labels.map((label, index) => (
         <Form.Check
           inline
-          label={label}
+          label={label}    
           name="1"
           type="radio"
           id={`radio-${name}-${index}`}
