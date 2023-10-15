@@ -1,21 +1,21 @@
-import Form from 'react-bootstrap/Form';
-import "../pw-radio/pw-radio.css";
-const Radio= ({label})=>{
-    return(
-        <>
-         <Form className='radiomain'>
-      {['radio'].map((type) => (
-        <div key={`default-${type}`} name="radioinputbutton" className="mb-3 radioinput">
-          <Form.Check
-            className='radiotext' // prettier-ignore
-            type={type}
-            id={`default-${type}`}
-            label={label}
-          />
-        </div>
+import React from "react";
+import Form from "react-bootstrap/Form";
+
+const Radio = ({ labels, name }) => {
+  return (
+    <>
+      {labels.map((label, index) => (
+        <Form.Check
+          inline
+          label={label}
+          name="1"
+          type="radio"
+          id={`radio-${name}-${index}`}
+          key={`radio-${name}-${index}`}
+        />
       ))}
-    </Form>
-        </>
-    )
+    </>
+  );
 };
+
 export default Radio;
