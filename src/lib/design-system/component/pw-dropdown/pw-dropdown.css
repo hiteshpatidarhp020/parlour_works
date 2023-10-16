@@ -1,18 +1,11 @@
 .rotate-icon {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* right: 0; */
   transition: transform 0.3s ease;
-  /* margin-left: 29px; */
 }
 
 .dropdown.show .rotate-icon {
   transform: rotate(180deg);
 }
-.dropdown {
-  /* width: fit-content !important; */
-  /* position: relative; */
-}
+
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -29,5 +22,4 @@
   width: 100% !important;
   padding: 0;
   min-width: fit-content !important;
-  /* background-color: red !important; */
 }
