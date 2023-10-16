@@ -10,6 +10,7 @@ import { useState } from "react";
 import PwModal from "../pw-modal";
 import PwText from "../pw-text";
 import Radio from "../pw-radio";
+import IcVectordropdown from "../../icons/IcVecterdrop";
 
 function ButtonDarkExample({ width }) {
   const itesms = css`
@@ -21,6 +22,7 @@ function ButtonDarkExample({ width }) {
     <>
       <Button variant="primary" onClick={() => setModalShow(true)}>
         Launch vertically centered modal
+        
       </Button>
       {/*THis is  modal component */}
       <PwModal
@@ -38,7 +40,7 @@ function ButtonDarkExample({ width }) {
       <Dropdown css={itesms} data-bs-theme="dark" className="dropmain">
         <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
           Button
-          <PwIcon className="rotate-icon " ic={<IcPlus />} />
+          <PwIcon className="rotate-icon " ic={<IcVectordropdown />} />
         </Dropdown.Toggle>
         <div css={itesms}>
           <Dropdown.Menu>
