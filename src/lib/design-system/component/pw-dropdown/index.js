@@ -24,14 +24,16 @@ function ButtonDarkExample({ width }) {
         Launch vertically centered modal
         
       </Button>
-      {/*THis is  modal component */}
       <PwModal
         show={modalShow}
         render={() => (
           <div>
+            <PwIcon ic={<IcPlus />} />
+            <PwText text="This is some content inside a div." />
+            <PwSpace value="30px" />
+            <PwText text="Additional content can go here." />
+
             <button onClick={() => setModalShow(false)}>ok</button>
-            <p>This is some content inside a div.</p>
-            <p>Additional content can go here.</p>
           </div>
         )}
       />
