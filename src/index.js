@@ -9,6 +9,7 @@ import ButtonDarkExample from "./lib/design-system/component/pw-dropdown";
 import PwSlider from "./lib/design-system/component/pw-slider/slider";
 import PwForgetpass from "./lib/design-system/component/pw-forgetpass";
 import PwSearchBar from "./lib/design-system/component/pw-searchbar";
+import PwText from "./lib/design-system/component/pw-text";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const items = ["Option 1", "Option 2", "Option 3"];
@@ -19,7 +20,8 @@ root.render(
       <Radio labels={["Option 1", "Option 2", "Option 3"]} />
       <PwSlider labelright="Male" labelleft="Female"/>
       <PwForgetpass />
-      <PwSearchBar/>
+      {/* <PwSearchBar/> */}
+      <PwText text="skjcnashflajfvdkvd" appearance="heading_s_regular" />
     </div>
   </React.StrictMode>
 );
