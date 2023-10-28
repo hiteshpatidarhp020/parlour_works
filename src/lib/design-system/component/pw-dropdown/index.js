@@ -16,26 +16,9 @@ function ButtonDarkExample({ width }) {
   const itesms = css`
     width: ${width};
   `;
-  const [modalShow, setModalShow] = useState(false);
 
   return (
     <>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button>
-      <PwModal
-        show={modalShow}
-        render={() => (
-          <div>
-            <PwIcon ic={<IcPlus />} />
-            <PwText text="This is some content inside a div." />
-            <PwSpace value="30px" />
-            <PwText text="Additional content can go here." />
-
-            <button onClick={() => setModalShow(false)}>ok</button>
-          </div>
-        )}
-      />
       {/*THis is  modal component */}
       <h1 css={itesms}>sdfdasg</h1>
       <Dropdown css={itesms} data-bs-theme="dark" className="dropmain">

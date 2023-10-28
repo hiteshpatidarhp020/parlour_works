@@ -1,5 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+import "./pw-radio.css";
 
 const Radio = ({ labels, name }) => {
   return (
@@ -14,6 +15,7 @@ const Radio = ({ labels, name }) => {
           key={`radio-${name}-${index}`}
         />
       ))}
+      <Form.Check type="radio" aria-label="radio 1" />
     </>
   );
 };
