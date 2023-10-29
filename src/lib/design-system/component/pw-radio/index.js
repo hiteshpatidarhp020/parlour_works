@@ -8,13 +8,14 @@ const Radio = ({ labels, name }) => {
       {labels.map((label, index) => (
         <Form.Check
           inline
-          label={label}    
+          label={label}
           name="1"
           type="radio"
           id={`radio-${name}-${index}`}
           key={`radio-${name}-${index}`}
         />
       ))}
+      <Form.Check type="radio" aria-label="radio 1" />
     </>
   );
 };

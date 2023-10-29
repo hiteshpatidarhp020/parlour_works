@@ -8,8 +8,9 @@ const PwButton = ({
   prefix,
   width,
   suffix,
-  children,
+  label,
   top,
+  onClick,
   bottom,
   left,
   right,
@@ -46,10 +47,10 @@ const PwButton = ({
   };
 
   return (
-    <div className={buttonSection} style={buttonStyle}>
+    <div onClick={onClick} className={buttonSection} style={buttonStyle}>
       <PwIcon className="prefix" ic={prefix} />
       <button className="main-btn" style={btnstyles}>
-        {children}
+        {label}
       </button>
       <PwIcon ic={suffix} />
     </div>

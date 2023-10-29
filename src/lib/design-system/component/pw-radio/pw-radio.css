@@ -2,15 +2,14 @@
   font-size: 16px !important;
   font-weight: 500;
   font-family: DM sans-serif;
-  color:red;
+  color: red;
   line-height: 21px;
 }
 .form-check-input:checked {
-  background-color:transparent !important;
-  border: 1px solid #CCAA6D !important;
+  background-color: transparent !important;
+  border: 1px solid #ccaa6d !important;
 }
-.form-check-input{
+.form-check-input {
   box-shadow: none !important;
   background-color: blue !important;
-  
 }

@@ -15,6 +15,12 @@ import PwDivider from "./lib/design-system/component/pw-divider";
 import PwKBLogo from "./lib/design-system/component/pw-kblogo";
 import PwGreenflag from "./lib/design-system/component/pw-greenflag";
 
+import "./App.css";
+import PwDropdown from "./lib/design-system/component/pw-dropdown";
+
+import { Button } from "react-bootstrap";
+import Practice from "./lib/design-system/component/practice";
+import WpInput from "./lib/design-system/component/pw-input";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const items = ["Option 1", "Option 2", "Option 3"];
 root.render(
