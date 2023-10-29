@@ -45,14 +45,14 @@ const textStyles = {
     font-size: ${theme?.fontSizes?.heading_m_medium || "27px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
-  heading_s_medium: css`
+  headingg_s_medium: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_s_medium || "22px"};
+    font-size: ${theme?.fontSizes?.headingg_s_medium || "22px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
-  heading_s_medi: css`
+  heading_s_me: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.heading_s_medi || "20px"};
+  font-size: ${theme?.fontSizes?.heading_s_me || "20px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 body_l_medium: css`
@@ -65,19 +65,19 @@ body_m_me: css`
   font-size: ${theme?.fontSizes?.body_m_me || "17px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_s_medium: css`
+body_s_medi: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_s_medium || "16px"};
+  font-size: ${theme?.fontSizes?.body_s_medi || "16px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_m_med: css`
+body_m_medi: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m_med || "14px"};
+  font-size: ${theme?.fontSizes?.body_m_medi || "14px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
-body_m_medium: css`
+bodyy_m_medium: css`
   font-family: "DM Sans";
-  font-size: ${theme?.fontSizes?.body_m_medium || "12px"};
+  font-size: ${theme?.fontSizes?.bodyy_m_medium || "12px"};
   font-weight: ${theme?.fontWeights?.medium || "500"};
 `,
 body_s_med: css`

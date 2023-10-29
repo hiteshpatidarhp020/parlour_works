@@ -10,6 +10,10 @@ import PwSlider from "./lib/design-system/component/pw-slider/slider";
 import PwForgetpass from "./lib/design-system/component/pw-forgetpass";
 import PwSearchBar from "./lib/design-system/component/pw-searchbar";
 import PwText from "./lib/design-system/component/pw-text";
+import PwOptionSlider from "./lib/design-system/component/pw-optionslider";
+import PwDivider from "./lib/design-system/component/pw-divider";
+import PwKBLogo from "./lib/design-system/component/pw-kblogo";
+import PwGreenflag from "./lib/design-system/component/pw-greenflag";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const items = ["Option 1", "Option 2", "Option 3"];
@@ -17,11 +21,14 @@ root.render(
   <React.StrictMode>
     <div>
       <ButtonDarkExample />
-      <Radio labels={["Option 1", "Option 2", "Option 3"]} />
+      {/* <Radio labels={["Option 1", "Option 2", "Option 3"]} /> */}
       <PwSlider labelright="Male" labelleft="Female"/>
       <PwForgetpass />
       {/* <PwSearchBar/> */}
-      <PwText text="skjcnashflajfvdkvd" appearance="heading_s_regular" />
+      <PwOptionSlider/>
+      {/* <PwDivider marginTop="100px" marginBottom="30px"/> */}
+      {/* <PwKBLogo  /> */}
+      <PwGreenflag/>
     </div>
   </React.StrictMode>
 );

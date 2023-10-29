@@ -1,0 +1,15 @@
+.logoback{
+    background-color: #272732;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.logotext{
+    font-family: DM sans-serif;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: -15px;
+    margin-left: 10px;
+}
