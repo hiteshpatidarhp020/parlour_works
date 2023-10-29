@@ -1,3 +1,52 @@
+// import Dropdown from "react-bootstrap/Dropdown";
+// import "./pw-dropdown.css";
+// import IcPlus from "../../icons/IcPlus";
+// import PwIcon from "../pw-icon";
+
+// /**@jsxImportSource @emotion/react */
+// import { css } from "@emotion/react";
+// import { useState } from "react";
+// import PwText from "../pw-text";
+// import IcVectordropdown from "../../icons/IcVecterdrop";
+
+// const PwDropdown = ({ width }) => {
+//   const [selectedItem, setSelectedItem] = useState("Select");
+
+//   const handleDropdownSelect = (eventKey, event) => {
+//     setSelectedItem(eventKey);
+//   };
+
+//   const itesms = css`
+//     width: ${width};
+//     background: "red";
+//   `;
+
+//   return (
+//     <>
+//       <Dropdown
+//         css={itesms}
+//         data-bs-theme="dark"
+//         className="dropmain"
+//         onSelect={handleDropdownSelect}
+//       >
+//         <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
+//           <PwText text={selectedItem} appearance="body_m_regular" />
+//           <PwIcon className="rotate-icon " ic={<IcVectordropdown />} />
+//         </Dropdown.Toggle>
+//         <div css={itesms}>
+//           <Dropdown.Menu>
+//             <Dropdown.Item eventKey="Action">Action</Dropdown.Item>
+//             <Dropdown.Item eventKey="Ano">Ano</Dropdown.Item>
+//             <Dropdown.Item eventKey="Some">Some</Dropdown.Item>
+//             <Dropdown.Item eventKey="Sepa">Sepa</Dropdown.Item>
+//           </Dropdown.Menu>
+//         </div>
+//       </Dropdown>
+//     </>
+//   );
+// };
+
+// export default PwDropdown;
 import Dropdown from "react-bootstrap/Dropdown";
 import "./pw-dropdown.css";
 import IcPlus from "../../icons/IcPlus";
@@ -5,40 +54,66 @@ import PwIcon from "../pw-icon";
 
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Button } from "react-bootstrap";
 import { useState } from "react";
-import PwModal from "../pw-modal";
 import PwText from "../pw-text";
-import Radio from "../pw-radio";
-import PwSpace from "../pw-space";
+import IcVectordropdown from "../../icons/IcVecterdrop";
 
-function ButtonDarkExample({ width }) {
-  const itesms = css`
+const PwDropdown = ({ width, kind, dropItems }) => {
+  const [selectedItem, setSelectedItem] = useState("Select");
+
+  const handleDropdownSelect = (eventKey, event) => {
+    setSelectedItem(eventKey);
+  };
+
+  let customStyles = {};
+
+  if (kind === "secondary") {
+    customStyles = {
+      "--custom-background-color": "none",
+      "--custom-border-bottom": "1px solid  #343948",
+      "--custom-border-radius": "none",
+    };
+  }
+
+  const dropMain = css`
     width: ${width};
   `;
 
   return (
     <>
-      {/*THis is  modal component */}
-      <h1 css={itesms}>sdfdasg</h1>
-      <Dropdown css={itesms} data-bs-theme="dark" className="dropmain">
-        <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
-          Button
-          <PwIcon className="rotate-icon " ic={<IcPlus />} />
+      <Dropdown
+        css={dropMain}
+        data-bs-theme="dark"
+        className="dropmain"
+        onSelect={handleDropdownSelect}
+      >
+        <Dropdown.Toggle
+          id="dropdown-button-dark-example1"
+          variant="secondary"
+          style={{
+            ...customStyles,
+          }}
+          className="custom-dropdown"
+        >
+          <PwText text={selectedItem} appearance="body_m_regular" />
+          <PwIcon className="rotate-icon " ic={<IcVectordropdown />} />
         </Dropdown.Toggle>
-        <div css={itesms}>
+        <div css={{ width }} className="custom-dropdown-toggle">
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1" active>
-              Action
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Ano </Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Some </Dropdown.Item>
-            <Dropdown.Item href="#/action-4">Sepa </Dropdown.Item>
+            {dropItems.map((item, index) => (
+              <Dropdown.Item key={index} eventKey={item}>
+                <PwText
+                  text={item}
+                  appearance="body_m_medium"
+                  lineHeight="37px"
+                />
+              </Dropdown.Item>
+            ))}
           </Dropdown.Menu>
         </div>
       </Dropdown>
     </>
   );
-}
+};
 
-export default ButtonDarkExample;
+export default PwDropdown;

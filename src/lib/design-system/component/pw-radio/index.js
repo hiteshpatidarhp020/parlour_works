@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import "./pw-radio.css";
+import "../pw-radio/pw-radio.css";
 
 const Radio = ({ labels, name }) => {
   return (

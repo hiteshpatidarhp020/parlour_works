@@ -1,16 +1,15 @@
+.form-check-label {
+  font-size: 16px !important;
+  font-weight: 500;
+  font-family: DM sans-serif;
+  color: red;
+  line-height: 21px;
+}
 .form-check-input:checked {
   background-color: transparent !important;
-  border: 1px solid black !important;
-  /* padding: 10px; */
-  /* margin: 10px; */
-  /* width: 12px; */
-}
-
-.form-check-input {
-  /* background-color: red !important; */
-  /* box-shadow: none !important; */
+  border: 1px solid #ccaa6d !important;
 }
 .form-check-input {
-  background-image: var("/logo512.png") !important;
-  /* background-color: red !important; */
+  box-shadow: none !important;
+  background-color: blue !important;
 }

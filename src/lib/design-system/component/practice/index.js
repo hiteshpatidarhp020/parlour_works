@@ -1,40 +1,30 @@
 import { useState } from "react";
-import PwIcon from "../pw-icon";
-import IcPlus from "../../icons/IcPlus";
 import PwModal from "../pw-modal";
 import { Button } from "react-bootstrap";
-import PwText from "../pw-text";
-import PwSpace from "../pw-space";
-import PwButton from "../pw-button";
+import "./practice.css";
 
 const Practice = () => {
   const [modalShow, setModalShow] = useState(false);
+
+  const handleClose = () => {
+    setModalShow(false);
+  };
+
+  const handleOpenModal = () => {
+    setModalShow(true);
+  };
+
   return (
     <div>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
+      <Button variant="primary" onClick={handleOpenModal}>
+        Open Modal
       </Button>
-
-      <PwModal
-        show={modalShow}
-        render={() => (
-          <div>
-            <PwIcon ic={<IcPlus />} />
-            <PwText text="This is some content inside a div." />
-            <PwSpace value="30px" />
-            <PwText text="Additional content can go here." />
-            <PwButton
-              onClick={() => setModalShow(false)}
-              label="Delete"
-              kind="secondary"
-            />
-            <div>
-              <button onClick={() => setModalShow(false)}>ok</button>
-            </div>
-          </div>
-        )}
-      />
+      <PwModal show={modalShow} kind="delete" onClose={handleClose}>
+        <button onClick={handleClose}>adsf</button>
+        {/*<div>modify Content here</div>*/}
+      </PwModal>
     </div>
   );
 };
+
 export default Practice;
