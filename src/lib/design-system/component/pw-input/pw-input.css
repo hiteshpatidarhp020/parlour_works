@@ -1,0 +1,27 @@
+.errorborder {
+  border-bottom: 1px solid #dc3545 !important;
+}
+.inputmain {
+  border-bottom: 1px solid blue;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  padding-bottom: 13px;
+  margin-bottom: 57px;
+}
+
+.errortext {
+  position: absolute;
+
+  bottom: -25px;
+}
+.inputfiled {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  color: white;
+}

@@ -47,9 +47,9 @@
 // };
 
 // export default PwDropdown;
+
 import Dropdown from "react-bootstrap/Dropdown";
 import "./pw-dropdown.css";
-import IcPlus from "../../icons/IcPlus";
 import PwIcon from "../pw-icon";
 
 /**@jsxImportSource @emotion/react */
@@ -58,11 +58,12 @@ import { useState } from "react";
 import PwText from "../pw-text";
 import IcVectordropdown from "../../icons/IcVecterdrop";
 
-const PwDropdown = ({ width, kind, dropItems }) => {
+const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
   const [selectedItem, setSelectedItem] = useState("Select");
 
   const handleDropdownSelect = (eventKey, event) => {
     setSelectedItem(eventKey);
+    stateConfig(false);
   };
 
   let customStyles = {};
@@ -72,6 +73,8 @@ const PwDropdown = ({ width, kind, dropItems }) => {
       "--custom-background-color": "none",
       "--custom-border-bottom": "1px solid  #343948",
       "--custom-border-radius": "none",
+      "--custom-bolor-color":
+        state && selectedItem === "Select" ? "#bb321f" : "",
     };
   }
 
@@ -80,7 +83,7 @@ const PwDropdown = ({ width, kind, dropItems }) => {
   `;
 
   return (
-    <>
+    <div className="dropsection">
       <Dropdown
         css={dropMain}
         data-bs-theme="dark"
@@ -112,7 +115,10 @@ const PwDropdown = ({ width, kind, dropItems }) => {
           </Dropdown.Menu>
         </div>
       </Dropdown>
-    </>
+      {state && selectedItem === "Select" && (
+        <div className="text-danger droperrortext">{state}</div>
+      )}
+    </div>
   );
 };
 

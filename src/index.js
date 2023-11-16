@@ -7,23 +7,17 @@ import "../node_modules/react-bootstrap/dist/react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 import "./App.css";
-import PwDropdown from "./lib/design-system/component/pw-dropdown";
-
 import { Button } from "react-bootstrap";
 import Practice from "./lib/design-system/component/practice";
 import WpInput from "./lib/design-system/component/pw-input";
+import PwSpace from "./lib/design-system/component/pw-space";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const items = ["Option 1", "Option 2", "Option 3"];
 root.render(
   <React.StrictMode>
-    <div style={{ background: "#242834", height: "100vh" }}>
+    <div style={{ background: "#191921", height: "100vh" }}>
       <Practice />
-      <WpInput />
-      <PwDropdown
-        width="157px"
-        kind=""
-        dropItems={["vivo", "iphone", "laptop", "Hp"]}
-      />
+      <PwSpace value="90px" />
       <Radio labels={["Option 1", "Option 2", "Option 3"]} />
     </div>
   </React.StrictMode>
