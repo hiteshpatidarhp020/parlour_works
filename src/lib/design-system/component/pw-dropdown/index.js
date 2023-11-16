@@ -122,4 +122,4 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
   );
 };
 
-export default PwDropdown;
+export default PwDropdown;

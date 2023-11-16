@@ -44,9 +44,9 @@ const textStyles = {
     font-size: ${theme?.fontSizes?.heading_m_medium || "27px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
-  heading_s_medium: css`
+  headingg_s_medium: css`
     font-family: "DM Sans";
-    font-size: ${theme?.fontSizes?.heading_s_medium || "22px"};
+    font-size: ${theme?.fontSizes?.headingg_s_medium || "22px"};
     font-weight: ${theme?.fontWeights?.medium || "500"};
   `,
   heading_s_medi: css`

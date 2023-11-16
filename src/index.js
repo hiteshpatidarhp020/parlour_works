@@ -2,10 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Radio from "./lib/design-system/component/pw-radio";
-import "../node_modules/react-bootstrap/dist/react-bootstrap";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
-
 import "./App.css";
 import { Button } from "react-bootstrap";
 import Practice from "./lib/design-system/component/practice";
