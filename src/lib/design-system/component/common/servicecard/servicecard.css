@@ -1,0 +1,33 @@
+.cardouterrow{
+    background-color: #242834;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.cardcolone{
+    display: flex;
+    justify-content: flex-start; 
+    background-color: #242834;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+.colcontentleft{
+    float: left;
+    color: white;
+}
+.colcontentright{
+    display: flex;
+    justify-content: end;
+}
+.rightcol32{
+    margin-left:20px;
+    color: white;
+}
+.rightcol31{
+    color: white;
+}
+.cardcoltwo{
+    margin-left: 15px;
+}
+.headertext{
+    opacity: 50%;
+}

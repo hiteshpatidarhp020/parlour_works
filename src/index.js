@@ -1,36 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
-
 import reportWebVitals from "./reportWebVitals";
-import PwButton from "./lib/design-system/component/pw-button";
-import IcPlus from "./lib/design-system/icons/IcPlus";
-import ButtonDarkExample from "./lib/design-system/component/pw-dropdown";
-import "../node_modules/react-bootstrap/dist/react-bootstrap";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+import { Button } from "react-bootstrap";
+import Practice from "./lib/design-system/component/practice";
+import WpInput from "./lib/design-system/component/pw-input";
+import PwSpace from "./lib/design-system/component/pw-space";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const items = ["Option 1", "Option 2", "Option 3"];
 root.render(
   <React.StrictMode>
-    <div>
-      <ButtonDarkExample width="100px" />
-      {/*<PwButton kind="primary" prefix={<IcPlus />} suffix={<IcPlus />}>
-        New sale primary
-      </PwButton>
-      <PwButton
-        kind="primary"
-        backgroundColor="red"
-        color="white"
-        suffix={<IcPlus />}
-        prefix={<IcPlus />}
-      >
-        New sale primary
-      </PwButton>
-
-      <PwButton kind="secondary">Confirm</PwButton>
-      <PwButton kind="tertiary">Tertiary Button</PwButton>
-      <PwButton kind="floating" prefix={<IcPlus />}>
-        floating Button
-</PwButton>*/}
+    <div style={{ background: "#191921", height: "100vh" }}>
+      <Practice />
+      <PwSpace value="90px" />
+      <Radio labels={["Option 1", "Option 2", "Option 3"]} />
     </div>
   </React.StrictMode>
 );
