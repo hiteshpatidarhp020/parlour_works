@@ -37,6 +37,7 @@ const PwButton = ({
     right,
     backgroundColor,
     color,
+    marginLeft,
     border: border && kind === "secondary" ? "1px solid #CCAA6D" : "none",
     borderRadius: borderRadius && kind === "floating" ? "10px" : "none",
     padding: width === "100%" ? "10px  0" : "",

@@ -116,4 +116,4 @@ const PwDropdown = ({ width, kind, dropItems }) => {
   );
 };
 
-export default PwDropdown;
+export default PwDropdown;
