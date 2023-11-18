@@ -1,7 +1,6 @@
 import PwDivider from "../pw-divider";
 import PwGreenflag from "../pw-greenflag";
 import PwKBLogo from "../pw-kblogo";
-import PwOptionSlider from "../pw-optionslider";
 import Servicecard from "../common/servicecard";
 import ManageCategory from "../common/manage-category";
 import PwImage from "../pw-image";
@@ -13,7 +12,7 @@ const MPractice = () =>{
     return(
         <>
         {/* <Radio labels={["Option 1", "Option 2", "Option 3"]} /> */}
-        {/* <PwOptionSlider labelFirst="create campaign" labelSecond="history of campaign"/> */}
+        
         {/* <PwDivider marginTop="30px" marginBottom="30px"/> */}
         {/* <PwKBLogo  /> */}
         {/* <PwGreenflag OffersText="Tranding" background="green" width="70px"/> */}
@@ -23,11 +22,11 @@ const MPractice = () =>{
 
         {/* <Servicecard marginRight="20px" marginBottom="20px"labelOne="Hair Spa" labelTwo="Best salon in town" labelCTwoOne="Hair cut" labelCTwoTwo="Blow Dry" labelCTwoThree="Hair Spa" labelCTwoFour="Hair Dry" 
         labelRightOne="F" labelRightTwo="F" labelRightThree="F" labelRightFour="M" labelRTOne="200" labelRTTwo="200" labelRTThree="300" labelRTFour="400"/> */}
-        <PwImage 
+        {/* <PwImage 
         src="/images/dashboard/hairspa.png"
         width="20%"
-        height="20%"/>
-        {/* <PwCheckbox labelcheck="check if its done"/> */}
+        height="20%"/> */}
+        <PwCheckbox labelcheck="Price is inclusive of GST"/>
         </>
     )
 };

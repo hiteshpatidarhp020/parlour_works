@@ -3,7 +3,7 @@ import "./practice.css";
 import WpInput from "../pw-input";
 import PwDropdown from "../pw-dropdown";
 import { Button } from "react-bootstrap";
-import PwModal from "../pw-modal";
+
 
 const Practice = () => {
   const [email, setEmail] = useState("");
@@ -75,12 +75,12 @@ const Practice = () => {
       />
 
       <button onClick={handleValidation}>next</button>
-      <Button variant="primary" onClick={handleOpenModal}>
+      {/* <Button variant="primary" onClick={handleOpenModal}>
         Open Modal
       </Button>
       <PwModal show={modalShow} kind="delete" onClose={handleClose}>
         <button onClick={handleClose}>adsf</button>
-      </PwModal>
+      </PwModal> */}
     </div>
   );
 };
