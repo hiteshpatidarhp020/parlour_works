@@ -4,6 +4,7 @@ import WpInput from "../pw-input";
 import PwDropdown from "../pw-dropdown";
 import { Button } from "react-bootstrap";
 import PwModal from "../pw-modal";
+import Practice2 from "./practice2";
 
 const Practice = () => {
   const [email, setEmail] = useState("");
@@ -78,6 +79,7 @@ const Practice = () => {
       <Button variant="primary" onClick={handleOpenModal}>
         Open Modal
       </Button>
+      <Practice2 />
       <PwModal show={modalShow} kind="delete" onClose={handleClose}>
         <button onClick={handleClose}>adsf</button>
       </PwModal>
