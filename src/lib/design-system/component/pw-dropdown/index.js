@@ -63,7 +63,9 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
 
   const handleDropdownSelect = (eventKey, event) => {
     setSelectedItem(eventKey);
-    stateConfig(false);
+    if (stateConfig) {
+      stateConfig(false);
+    }
   };
 
   let customStyles = {};
@@ -116,7 +118,11 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
         </div>
       </Dropdown>
       {state && selectedItem === "Select" && (
-        <div className="text-danger droperrortext">{state}</div>
+        <PwText
+          className="text-danger droperrortext"
+          appearance="body_s_regul"
+          text={state}
+        />
       )}
     </div>
   );

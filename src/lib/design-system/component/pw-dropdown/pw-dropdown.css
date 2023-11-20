@@ -40,6 +40,7 @@
   background-color: white;
   color: black;
 }
+
 .dropdown-item {
   color: black;
   font-size: 12px;
@@ -60,4 +61,7 @@
 .dropsection {
   position: relative;
   margin-bottom: 20px;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #343948;
 }

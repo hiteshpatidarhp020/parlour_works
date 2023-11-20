@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <div>
       <Practice />
-      {/* <MPractice/> */}
+      {/*<MPractice />*/}
     </div>
   </React.StrictMode>
 );

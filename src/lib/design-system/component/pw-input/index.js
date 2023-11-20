@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./pw-input.css";
+import PwText from "../pw-text";
 
 const WpInput = ({
   type,
   maxLength,
-  email,
+  value,
   label,
-  setEmail,
+  stateConfig,
   error,
   validate,
 }) => {
@@ -20,8 +21,8 @@ const WpInput = ({
     }
 
     if (inputValue.length <= maxLength || maxLength === undefined) {
-      if (setEmail) {
-        setEmail(inputValue);
+      if (stateConfig) {
+        stateConfig(inputValue);
       }
     }
   };
@@ -34,14 +35,14 @@ const WpInput = ({
   };
 
   const labelStyle = {
-    top: isInputFocused || email ? "-15px" : "0px",
+    top: isInputFocused || value ? "-15px" : "0px",
     position: "absolute",
     transition: "top 0.3s ease",
-    fontSize: isInputFocused || email ? "12px" : "16px",
+    fontSize: isInputFocused || value ? "12px" : "16px",
     fontFamily: " DM Sans",
     fontWeight: "400",
     color:
-      isInputFocused || email
+      isInputFocused || value
         ? "rgba(255, 255, 255, 0.6)"
         : "rgba(255, 255, 255, 0.5)",
   };
@@ -51,17 +52,23 @@ const WpInput = ({
       className={` position-relative inputmain  ${error ? "errorborder" : ""}`}
     >
       <label style={labelStyle}>{label}</label>
+
       <input
         maxLength={maxLength}
         className="inputfiled"
-        value={email}
+        value={value}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
         placeholder=" "
         type={type}
       />
-      {validate && <div className="text-danger errortext">{error}</div>}
+
+      <PwText
+        className="text-danger droperrortext"
+        appearance="body_s_regul"
+        text={error}
+      />
     </div>
   );
 };
