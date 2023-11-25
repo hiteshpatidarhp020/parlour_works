@@ -9,3 +9,7 @@
 .texttwo{
     margin-left: 50px;
 }
+.modal-content{
+    box-shadow: 0px 9px 16px 0px #16161c;
+    padding: 10px 20px;
+}

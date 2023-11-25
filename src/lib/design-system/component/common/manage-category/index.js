@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import "./manage-category.css";
 import { Col, Image, Row } from "react-bootstrap";
 import PwText from "../../pw-text";
+import PwSpace from "../../pw-space";
 
 
 const ManageCategory = ({labelHead,labelDiscript,marginBottom,marginRight}) =>{
@@ -16,22 +17,24 @@ const ManageCategory = ({labelHead,labelDiscript,marginBottom,marginRight}) =>{
     };
     return(
         <>
-        <div style={{ width: '40%' }} css={Servicebox} className="maincard">
-        <Row >
-            <div className="cardleft">
-            <Col xs={4} md={3}>
+         <div style={{ width: '100%' }} css={Servicebox} className="maincard">
+        <Row className="cardcolo">
+            <Col>
             <Image src="../images/dashboard/hairspa.png" />
-            </Col>
-            <Col xs={4} md={3}  className="coltext">
+        
+            <div  className="cardcolt">
             <PwText css={Servicecart} text={labelHead} appearance="body_s_medium"/>
-            <PwText className="headertexttwo" css={Servicecart} text={labelDiscript} appearance="body_m_regular"/>
-             </Col>
+            
+            <PwSpace value="2px"/>
+            <PwText className="headertextt" css={Servicecart} text={labelDiscript} appearance="body_m_regular"/>
              </div>
-             <Col  xs={4} md={3} className="cardicon">
+             </Col>
+             <Col  xs={4} md={3} className="cardic">
                 <Image src="../images/dashboard/icservice.svg"/>
              </Col>
         </Row>
         </div>
+      
         </>
     )
 };

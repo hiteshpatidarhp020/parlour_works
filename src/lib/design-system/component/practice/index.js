@@ -80,7 +80,7 @@ const Practice = () => {
         Open Modal
       </Button>
       {/* <Practice2 /> */}
-      <PwModal show={modalShow} kind="alert" onClose={handleClose}>
+      <PwModal show={modalShow} kind="success" onClose={handleClose}>
         <button onClick={handleClose}>adsf</button>
       </PwModal>
     </div>
