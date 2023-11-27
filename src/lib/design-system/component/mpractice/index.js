@@ -1,7 +1,6 @@
 import PwDivider from "../pw-divider";
 import PwGreenflag from "../pw-greenflag";
 import PwKBLogo from "../pw-kblogo";
-import PwOptionSlider from "../pw-optionslider";
 import Servicecard from "../common/servicecard";
 import ManageCategory from "../common/manage-category";
 import PwImage from "../pw-image";
