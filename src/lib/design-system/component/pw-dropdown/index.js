@@ -49,9 +49,10 @@
 // export default PwDropdown;
 
 import Dropdown from "react-bootstrap/Dropdown";
-import "./pw-dropdown.css";
+// import "./pw-dropdown.css";
+import style from "./pw-dropdown.module.css";
 import PwIcon from "../pw-icon";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { useState } from "react";

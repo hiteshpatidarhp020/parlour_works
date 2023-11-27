@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./otp.css";
+import style from "./otp.module.css";
 import { useRouter } from "next/router";
+import PwText from "../pw-text";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Otp = () => {
   const [timer, setTimer] = useState(10);
   const [showTimer, setShowTimer] = useState(true);
+  const [otpValues, setOtpValues] = useState(["", "", "", ""]);
   const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [isErrorVisible, setIsErrorVisible] = useState(false);
 
   useEffect(() => {
     let interval;
@@ -32,7 +36,14 @@ const Otp = () => {
 
     inputRefs[0].current.focus();
   };
+
   const handleInput = (index, value) => {
+    const newOtpValues = [...otpValues];
+    newOtpValues[index] = value;
+    setOtpValues(newOtpValues);
+
+    setIsErrorVisible(false);
+
     if (value !== "" && index < inputRefs.length - 1) {
       inputRefs[index + 1].current.focus();
     } else if (value === "" && index > 0) {
@@ -47,27 +58,46 @@ const Otp = () => {
       handleInput(index, value);
     }
   };
+
+  const areAllInputsFilled = otpValues.every((value) => value !== "");
+
   const router = useRouter();
   const redirectToPage = () => {
-    router.push("/target-page");
+    if (areAllInputsFilled) {
+      router.push("https://www.jiocinema.com/");
+    } else {
+      setIsErrorVisible(true);
+    }
   };
+
   return (
-    <div>
-      <button onClick={redirectToPage}>Go to Target Page</button>
-      <div className="otpmain">
+    <div className="mt-5">
+      <div className={style.otpmain}>
         {[0, 1, 2, 3].map((index) => (
           <input
-            className="otpinput"
+            className={`${style.otpinput} ${
+              isErrorVisible ? style.errorinput : ""
+            } `}
             key={index}
             type="text"
             maxLength={1}
             ref={inputRefs[index]}
+            value={otpValues[index]}
             onChange={(e) => handleInputChange(index, e)}
           />
         ))}
       </div>
-      {showTimer && <h4 style={{ color: "white" }}>00:{timer}secs</h4>}
+      {showTimer && <h4 style={{ color: "blue" }}>00:{timer}secs</h4>}
       {!showTimer && <button onClick={handleResendOtp}>Resend OTP</button>}
+      {isErrorVisible && (
+        <PwText
+          className={style.errortext}
+          appearance="body_m_regular"
+          text="Please enter OTP"
+          color="#dc3545"
+        ></PwText>
+      )}
+      <button onClick={redirectToPage}>Next</button>
     </div>
   );
 };

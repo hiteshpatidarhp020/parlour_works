@@ -1,0 +1,29 @@
+.otpinput {
+  width: 67px;
+  height: 67px;
+  display: flex;
+  border-radius: 10px;
+  background: #20242e;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  border: 1px solid #20242e;
+}
+.otpmain {
+  display: flex;
+  gap: 54px;
+}
+
+.errortext {
+  color: #dc3545;
+}
+.errorinput {
+  color: #dc3545;
+  border: 1px solid red;
+}

@@ -1,0 +1,52 @@
+/* side-bar.module.css */
+.tabBar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+  z-index: 999;
+  background: #2c303f;
+}
+
+.mainsection {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+}
+
+.tab {
+  margin: 8px 17px;
+  padding: 12px 0 12px 20px;
+  cursor: pointer;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.active {
+  border-radius: 10px;
+  background: #ccaa6d;
+  color: #2c303f;
+}
+.tab:hover:not(.active) {
+  border-radius: 10px;
+  background: #20242e;
+  color: white;
+}
+
+.tabContent {
+  padding-top: 40px !important;
+  padding: 80px 60px 28px 60px !important;
+  /* background-color: aqua; */
+  background: #191921;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
