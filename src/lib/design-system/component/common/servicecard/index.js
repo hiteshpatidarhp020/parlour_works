@@ -27,7 +27,7 @@ const Servicecard = ({services,labelHeading,labelDiscription}) =>{
              </div>
              </Col>
         </Row>
-        <PwDivider className="divider" marginTop="5px" marginBottom="10px" />
+        <PwDivider className="divider" marginTop="20px" marginBottom="15px" />
         {services.map((service) => (
         <div style={{ color: "white" }} key={service.text}>
         <Row>
