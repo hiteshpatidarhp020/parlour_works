@@ -11,12 +11,12 @@ const PwCheckbox=({checkboxes})=> {
         <div  key={checkboxes.checkbox}>
     <label class="container">{checkbox.value1}
     <input type="checkbox"/>
-    <span class="checkmark"></span>
+    <span class="checkmarkone"></span>
     </label>
 
     <label class="container">{checkbox.value2}
     <input type="checkbox"/>
-    <span class="checkmark"></span>
+    <span class="checkmarkone"></span>
     </label>
 </div>
       ))}

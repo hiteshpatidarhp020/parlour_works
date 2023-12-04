@@ -19,7 +19,7 @@
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  background-color: green;
+  /* background-color: gree; */
 }
 
 /* Create a custom radio button */
@@ -29,8 +29,8 @@
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #eee;
-  border: 4px solid #CCAA6D;
+  background-color: #D4D4D4;
+  border: 2px solid #CCAA6D;
   border-radius: 50%;
 }
 
@@ -41,8 +41,8 @@
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  /* background-color: #CCAA6D;
-  border-radius: 60%; */
+  background-color: white;
+  /* border-radius: 60%; */
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -59,11 +59,13 @@
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
+ 	top: 3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
-	background: white;
-  
+	background: #CCAA6D;
+}
+.checkmark {
+  border: 3px solid #CCAA6D;
 }
