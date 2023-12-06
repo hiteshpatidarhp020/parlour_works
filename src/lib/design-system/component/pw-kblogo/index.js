@@ -1,11 +1,13 @@
-import "./pw-kblogo.css";
-const PwKBLogo = () =>{
-    return(
-        <>
-            <div className="logoback">
-                <div className="logotext"><p>KB</p></div>
-            </div>
-        </>
-    )
+import styles from "./pw-profile-logo.module.css";
+const PwProfileLogo = () => {
+  return (
+    <>
+      <div className={styles.logoback}>
+        <div className={styles.logotext}>
+          <p>KB</p>
+        </div>
+      </div>
+    </>
+  );
 };
-export default PwKBLogo;
+export default PwProfileLogo;

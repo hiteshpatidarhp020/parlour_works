@@ -3,6 +3,7 @@ import style from "./otp.module.css";
 import { useRouter } from "next/router";
 import PwText from "../pw-text";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PwSlider from "../pw-slider/slider";
 
 const Otp = () => {
   const [timer, setTimer] = useState(10);
@@ -98,6 +99,7 @@ const Otp = () => {
         ></PwText>
       )}
       <button onClick={redirectToPage}>Next</button>
+      <PwSlider />
     </div>
   );
 };

@@ -44,9 +44,17 @@
   background: #191921;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  width: 100%;
+@media (max-width: 768px) {
+  .tabBar {
+    display: none;
+  }
+
+  .tabContent {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .tabContent {
+    display: none;
+  }
 }

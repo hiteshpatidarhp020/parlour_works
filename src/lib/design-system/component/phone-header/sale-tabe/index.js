@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Tabs, Tab } from "react-bootstrap";
-import styles from "./pw-slider.module.css";
+// import "./sale.css";
+import styles from "./sale-tabe.module.css";
 
-const PwSlider = () => {
+const SaleTabe = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
   const handleTabSelect = (tabKey) => {
@@ -11,19 +12,14 @@ const PwSlider = () => {
 
   return (
     <div className={styles.pwslidercontainer}>
-      <Tabs
-        activeKey={activeTab}
-        onSelect={handleTabSelect}
-        id="switch-tabs"
-        className="mb-3"
-      >
-        <Tab eventKey="tab1" title="Tab 1">
+      <Tabs activeKey={activeTab} onSelect={handleTabSelect} id="switch-tabs">
+        <Tab className={styles.tabsitems} eventKey="tab1" title="Tab 1">
           <p>Content for Tab 1</p>
         </Tab>
-        <Tab eventKey="tab2" title="Tab 2">
+        <Tab className={styles.tabsitems} eventKey="tab2" title="Tab 2">
           <p>Content for Tab 2</p>
         </Tab>
-        <Tab eventKey="tab3" title="Tab 3">
+        <Tab className={styles.tabsitems} eventKey="tab3" title="Tab 3sdsf">
           <p>Content for Tab 3</p>
         </Tab>
       </Tabs>
@@ -31,4 +27,4 @@ const PwSlider = () => {
   );
 };
 
-export default PwSlider;
+export default SaleTabe;

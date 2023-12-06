@@ -1,3 +1,3 @@
-import OtpContainer from "../../src/lib/design-system/container/otp";
+import OtpContainer from "../../src/lib/v1/components/container/otp";
 
 export default OtpContainer;

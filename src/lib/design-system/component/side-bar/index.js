@@ -4,11 +4,11 @@ import styles from "./side-bar.module.css";
 import PwButton from "../pw-button";
 import PwText from "../pw-text";
 import Practice from "../practice";
-import CollapsibleExample from "../header";
-import Header from "../header";
-import Reports from "../../../v1/components/reports";
-import Dashboard from "../../../v1/components/dashboard";
-import Service from "../../../v1/components/service";
+import CollapsibleExample from "../dashboard-header";
+
+import HomDashboard from "../../../v1/components/dashboard/home-dashboard";
+import Reports from "../../../v1/components/dashboard/reports";
+import Service from "../../../v1/components/dashboard/service";
 
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -53,17 +53,14 @@ const Sidebar = () => {
           </div>
         </Col>
 
-        <Col md={10} className={`${styles.tabContent} p-0`}>
+        <Col md={10} className={`${styles.tabContent} `}>
           <div>
-            {activeTab === "tab1" && <Dashboard />}
+            {activeTab === "tab1" && <HomDashboard />}
             {activeTab === "tab2" && <Reports />}
             {activeTab === "tab3" && <Service />}
           </div>
         </Col>
       </Row>
-      <div className={styles.header}>
-        <Header />
-      </div>
     </div>
   );
 };

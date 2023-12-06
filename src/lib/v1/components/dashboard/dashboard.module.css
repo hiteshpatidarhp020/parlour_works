@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  .sidebarnone {
+    display: none;
+  }
+}

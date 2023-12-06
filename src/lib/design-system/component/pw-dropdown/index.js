@@ -50,7 +50,7 @@
 
 import Dropdown from "react-bootstrap/Dropdown";
 // import "./pw-dropdown.css";
-import style from "./pw-dropdown.module.css";
+import styles from "./pw-dropdown.module.css";
 import PwIcon from "../pw-icon";
 import "bootstrap/dist/css/bootstrap.min.css";
 /**@jsxImportSource @emotion/react */
@@ -74,7 +74,7 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
   if (kind === "secondary") {
     customStyles = {
       "--custom-background-color": "none",
-      "--custom-border-bottom": "1px solid  #343948",
+      "--custom-border-bottom": "5px solid #343948 !important",
       "--custom-border-radius": "none",
       "--custom-bolor-color":
         state && selectedItem === "Select" ? "#bb321f" : "",

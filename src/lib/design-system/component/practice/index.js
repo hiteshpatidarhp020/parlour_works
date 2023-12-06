@@ -4,6 +4,7 @@ import WpInput from "../pw-input";
 import PwDropdown from "../pw-dropdown";
 import { Button } from "react-bootstrap";
 import PwModal from "../pw-modal";
+import PwButton from "../pw-button";
 
 const Practice = () => {
   const [email, setEmail] = useState("");
@@ -48,18 +49,19 @@ const Practice = () => {
   };
 
   return (
-    <div>
+    <div style={{ background: "red", padding: "20px" }}>
       <Button variant="primary" onClick={handleOpenModal}>
         Open Modal
       </Button>
-      <PwModal show={modalShow} kind="success" onClose={handleClose}>
+      <PwModal show={modalShow} kind="alert" onClose={handleClose}>
         <button onClick={handleClose}>adsf</button>
       </PwModal>
       <PwDropdown
-        width="157px"
+        // width="157px"
         kind="secondary"
         dropItems={["vivo", "iphone", "laptop", "Hp"]}
       />
+      <PwButton kind="primary" label="Click" />
     </div>
   );
 };

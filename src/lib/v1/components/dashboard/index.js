@@ -1,4 +1,23 @@
+import Header from "../../../design-system/component/dashboard-header";
+import PhoneFooter from "../../../design-system/component/phone-footer";
+import PhoneHeader from "../../../design-system/component/phone-header";
+import Sidebar from "../../../design-system/component/side-bar";
+import styles from "./dashboard.module.css";
 const Dashboard = () => {
-  return <h1>Dashboard</h1>;
+  return (
+    <div>
+      <div>
+        {/*<Practice />*/}
+        <Sidebar />
+        <div className={styles.sidebarnone}>
+          <Header />
+        </div>
+        <div className={styles.header}>
+          <PhoneFooter />
+          <PhoneHeader />
+        </div>
+      </div>
+    </div>
+  );
 };
 export default Dashboard;
