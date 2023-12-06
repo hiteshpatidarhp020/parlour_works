@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .cardouterrow{
     background-color: #242834;
     border-radius: 5px;
@@ -9,11 +10,25 @@
     background-color: #242834;
     /* padding: 10px 10px 10px 10px; */
     color: white;
+=======
+.cardouterrow {
+  background-color: #242834;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
 }
-.colcontentleft{
-    float: left;
-    color: white;
+.cardcolone {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #242834;
+  padding: 10px 10px 10px 10px;
+  color: white;
+>>>>>>> origin/parlourV1
 }
+.colcontentleft {
+  float: left;
+  color: white;
+}
+<<<<<<< HEAD
 .colcontentright{
     display: flex;
     justify-content: flex-end; 
@@ -33,8 +48,23 @@
     display: inline-block;
     justify-content: center;
     margin-left: 15px;
+=======
+.colcontentright {
+  display: flex;
+  justify-content: end;
 }
-.headertext{
-    opacity: 50%;
+.rightcol32 {
+  margin-left: 20px;
+  color: white;
+}
+.rightcol31 {
+  color: white;
+}
+.cardcoltwo {
+  margin-left: 15px;
+>>>>>>> origin/parlourV1
+}
+.headertext {
+  opacity: 50%;
 }
 
