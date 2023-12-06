@@ -1,0 +1,173 @@
+@font-face {
+  font-family: DM sans;
+  src: url(/src/lib/styles/font/DMSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: DM sans;
+  src: url(/src/lib/styles/font/DMSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: DM sans;
+  src: url(/src/lib/styles/font/DMSans-Bold.ttf);
+  font-family: 700;
+}
+
+////////////////////////////  modal css Phone Header tab start
+.sale-tabe_pwslidercontainer__uxPW5 .nav-link.active {
+  border: none !important;
+  outline-color: transparent !important;
+  border-bottom: 2px solid red !important;
+  background-color: transparent !important;
+}
+////////////////////////////  modal css Phone Header end
+
+////////////////////////////  modal css start
+.modal .modal-header {
+  border: none !important;
+}
+.modal .modal-content {
+  border-radius: 10px;
+  background: #242834;
+  box-shadow: 0px 9px 16px 0px #16161c;
+  color: #fff;
+  width: auto;
+}
+.modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.modal .modal-body {
+  width: fit-content !important;
+  padding: 31px 40px;
+  text-align: center;
+}
+///////////////////////////////////  modal css end
+///
+///////////////////////////////////  Buttons css start
+.primary-button {
+  background: #ccaa6d;
+  padding: 10px 15px;
+}
+.secondary-button {
+  border-radius: 10px;
+  background: #191921;
+  box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.11);
+  padding: 10px 35px;
+}
+.secondary-button button {
+  color: #ccaa6d;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.tertiary-button {
+  padding: 10px 15px;
+}
+.tertiary-button button {
+}
+.primary-button,
+.secondary-button,
+.tertiary-button {
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-btn {
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.floating-button {
+  position: absolute;
+  background: #ccaa6d;
+  padding: 10px 15px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+///////////////////////////////////  Buttons css end
+.css-kceu8o-PwDropdown {
+}
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+
+.dropdown.show .rotate-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-toggle:hover {
+  background-color: var(--custom-background-color, #343948);
+}
+
+.dropdown-toggle {
+  border-radius: var(--custom-border-radius, 10px) !important;
+  background-color: var(--custom-background-color, #343948) !important;
+  border-bottom: var(--custom-border-bottom) !important;
+  width: 100% !important;
+  text-align: start !important;
+  border: none;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  padding: 10px 17px;
+  border-color: var(--custom-bolor-color) !important;
+}
+
+.dropdown-menu {
+  width: 100% !important;
+  padding: 0;
+  min-width: fit-content !important;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.11);
+  border: none;
+}
+.dropdown-item.active {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-item {
+  color: black;
+  font-size: 12px;
+  font-family: DM sans-serif;
+  font-weight: 500;
+  padding-left: 25px;
+}
+.dropdown-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+.dropdown-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.droperrortext {
+  position: absolute;
+  bottom: -24px;
+}
+.dropsection {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #343948;
+}
