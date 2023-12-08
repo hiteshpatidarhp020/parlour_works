@@ -10,9 +10,9 @@
     /* padding: 10px 10px 10px 10px; */
     color: white;
 }
-.colcontentleft{
-    float: left;
-    color: white;
+.colcontentleft {
+  float: left;
+  color: white;
 }
 .colcontentright{
     display: flex;
@@ -34,7 +34,7 @@
     justify-content: center;
     margin-left: 15px;
 }
-.headertext{
-    opacity: 50%;
+.headertext {
+  opacity: 50%;
 }
 

@@ -1,0 +1,17 @@
+.pwslidercontainer {
+  position: relative;
+}
+.tabsitems {
+  position: absolute;
+  top: 50px;
+}
+.handleTabSelect {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue !important;
+  gap: 40px;
+}
+
+.nav-tabs {
+  background-color: red !important;
+}

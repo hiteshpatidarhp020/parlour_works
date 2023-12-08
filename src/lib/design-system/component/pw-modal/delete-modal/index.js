@@ -1,5 +1,5 @@
 import React from "react";
-import "./delete.css"
+// import "./delete.css"
 import PwIcon from "../../pw-icon";
 import PwSpace from "../../pw-space";
 import PwText from "../../pw-text";
@@ -15,16 +15,20 @@ const DeletemModal = (props) => {
   };
 
   return (
-    <div >
-      <PwIcon className="crossicon" ic={<IcCrossicon/>} />
+    <div>
+      <PwIcon className="crossicon" ic={<IcCrossicon />} />
       <PwSpace value="30px" />
-      <PwIcon className="icontop" ic={<IcDeleteicon/>} />
+      <PwIcon className="icontop" ic={<IcDeleteicon />} />
       <PwSpace value="30px" />
       <PwText
         text="Are you sure you want to delete"
         appearance="heading_s_medi"
       />
-      <PwText className="texttwod" text="the service ?" appearance="heading_s_medi" />
+      <PwText
+        className="texttwod"
+        text="the service ?"
+        appearance="heading_s_medi"
+      />
       <PwSpace value="40px" />
       <PwButton
         width="130px"
@@ -35,7 +39,6 @@ const DeletemModal = (props) => {
       />
       <PwSpace value="30px" />
     </div>
-
   );
 };
 

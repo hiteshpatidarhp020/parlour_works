@@ -7,8 +7,9 @@ import PwImage from "../pw-image";
 import IcPlus from "../../icons/IcPlus";
 import IcService from "../../icons/IcService";
 import PwCheckbox from "../pw-checkbox";
-import styled from "./mpractice.module.css";
-// import Radio from "../pw-radio";
+// import styled from "./mpractice.module.css";
+import Radio from "../pw-radio";
+import PwDashboardPoniterCard from "../common/dashboard-pointercard";
 
 const MPractice = () =>{
     const services = [
@@ -30,9 +31,10 @@ const MPractice = () =>{
         { id: 2, value2: "Price"},
       ];
 
+      const cardColor ="red";
     return(
         <>
-        {/* <Radio labels={labels} /> */}
+        <Radio labels={labels} />
 
         {/* <PwDivider
          marginTop="30px" 
@@ -63,6 +65,7 @@ const MPractice = () =>{
          <PwCheckbox 
         checkboxes={checkboxes}/>
 
+        <PwDashboardPoniterCard labelOne="Total Business" labelTwo="17500" colors={cardColor}/>
 
         </> 
     )

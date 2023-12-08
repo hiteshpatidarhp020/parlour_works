@@ -37,7 +37,7 @@
   }
 }
 /* font family and weight */
-@font-face {
+/* @font-face {
   font-family: DM sans;
   src: url(/src/lib/styles/font/DMSans-Regular.ttf);
   font-weight: 400;
@@ -51,4 +51,4 @@
   font-family: DM sans;
   src: url(/src/lib/styles/font/DMSans-Bold.ttf);
   font-family: 700;
-}
+} */

@@ -1,0 +1,23 @@
+.footermain {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c303f;
+  width: 100%;
+  padding: 0 20px !important;
+  margin: 0;
+  color: white !important;
+}
+
+.itemsection {
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .footermain {
+    display: none;
+  }
+}

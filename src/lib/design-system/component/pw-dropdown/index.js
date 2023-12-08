@@ -49,9 +49,10 @@
 // export default PwDropdown;
 
 import Dropdown from "react-bootstrap/Dropdown";
-import "./pw-dropdown.css";
+// import "./pw-dropdown.css";
+import styles from "./pw-dropdown.module.css";
 import PwIcon from "../pw-icon";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 /**@jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { useState } from "react";
@@ -63,7 +64,9 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
 
   const handleDropdownSelect = (eventKey, event) => {
     setSelectedItem(eventKey);
-    stateConfig(false);
+    if (stateConfig) {
+      stateConfig(false);
+    }
   };
 
   let customStyles = {};
@@ -71,7 +74,7 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
   if (kind === "secondary") {
     customStyles = {
       "--custom-background-color": "none",
-      "--custom-border-bottom": "1px solid  #343948",
+      "--custom-border-bottom": "5px solid #343948 !important",
       "--custom-border-radius": "none",
       "--custom-bolor-color":
         state && selectedItem === "Select" ? "#bb321f" : "",
@@ -116,7 +119,11 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
         </div>
       </Dropdown>
       {state && selectedItem === "Select" && (
-        <div className="text-danger droperrortext">{state}</div>
+        <PwText
+          className="text-danger droperrortext"
+          appearance="body_s_regul"
+          text={state}
+        />
       )}
     </div>
   );

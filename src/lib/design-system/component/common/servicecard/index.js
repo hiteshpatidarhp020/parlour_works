@@ -1,5 +1,5 @@
 import { Col, Image, Row } from "react-bootstrap";
-import "./servicecard.css"
+import "./servicecard.css";
 import PwText from "../../pw-text";
 import PwDivider from "../../pw-divider";
 import PwSpace from "../../pw-space";
@@ -18,7 +18,7 @@ const Servicecard = ({services,labelHeading,labelDiscription}) =>{
         <div style={{ width: '100%' }} className="cardouterrow">
         
         <Row className="cardcolone">
-            <Col>
+          <Col>
             <Image src="../images/dashboard/hairspa.png" />
             <div  className="cardcoltwo">
             <PwText  text={labelHeading} appearance="body_s_medium"/>

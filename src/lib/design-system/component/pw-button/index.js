@@ -1,6 +1,7 @@
 import React from "react";
-import "./pw-button.css";
+// import "./pw-button.css";
 import PwIcon from "../pw-icon";
+import styles from "./pw-button.module.css";
 
 const PwButton = ({
   kind,
