@@ -1,3 +1,4 @@
+
 .cardouterrow{
     background-color: #242834;
     border-radius: 5px;
@@ -9,11 +10,21 @@
     background-color: #242834;
     /* padding: 10px 10px 10px 10px; */
     color: white;
+
+.cardouterrow {
+  background-color: #242834;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
 }
 .colcontentleft {
   float: left;
   color: white;
 }
+.colcontentleft {
+  float: left;
+  color: white;
+}
+
 .colcontentright{
     display: flex;
     justify-content: flex-end; 
@@ -34,6 +45,11 @@
     justify-content: center;
     margin-left: 15px;
 }
+.colcontentright {
+  display: flex;
+  justify-content: end;
+}
+
 .headertext {
   opacity: 50%;
 }
