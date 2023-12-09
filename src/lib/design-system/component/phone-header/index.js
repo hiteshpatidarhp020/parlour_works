@@ -12,10 +12,10 @@ const PhoneHeader = () => {
     <div className={`${styles.pheadermain} px-4`}>
       <Navbar className={` ${styles.pheadersection}`}>
         <Navbar.Collapse className="align-items-start">
-          <div>sdfs</div>
+          <div>Logo</div>
           <Container>
             <div>sdfdsdafdf adfsdfgfdg</div>
-            <div>sdfdsdafdf</div>
+            <div>sdfdsdafd f</div>
           </Container>
         </Navbar.Collapse>
 
@@ -24,7 +24,7 @@ const PhoneHeader = () => {
         </Navbar.Collapse>
       </Navbar>
       <PwSpace value="30px" />
-      <h1 className="text-white">sdaf</h1>
+
       <SaleTabe />
     </div>
   );

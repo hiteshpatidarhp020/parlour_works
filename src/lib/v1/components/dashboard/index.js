@@ -13,8 +13,8 @@ const Dashboard = () => {
           <Header />
         </div>
         <div className={styles.header}>
-          <PhoneFooter />
           <PhoneHeader />
+          <PhoneFooter />
         </div>
       </div>
     </div>
