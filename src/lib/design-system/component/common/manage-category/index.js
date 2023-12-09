@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import "./manage-category.css";
 import { Col, Image, Row } from "react-bootstrap";
 import PwText from "../../pw-text";
+import PwSpace from "../../pw-space";
 
 const ManageCategory = ({
   labelHead,

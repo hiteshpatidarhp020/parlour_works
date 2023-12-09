@@ -1,23 +1,27 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
-import "../pw-radio/pw-radio.css";
+import "./pw-radio.css";
 
-const Radio = ({ labels, name }) => {
+const Radio = ({ labels}) => {
+    if (!labels || !Array.isArray(labels)) {
+        return;
+    } 
   return (
     <>
-      {labels.map((label, index) => (
-        <Form.Check
-          inline
-          label={label}
-          name="1"
-          type="radio"
-          id={`radio-${name}-${index}`}
-          key={`radio-${name}-${index}`}
-        />
+    <div>
+      {labels.map((label) => (
+        <div style={{ color: "" }} key={labels.label}>
+      <label class="container">{label.name1}
+      <input type="radio" name="radio" />
+      <span class="checkmark"></span>
+      </label>
+      
+    
+      </div>
       ))}
-      <Form.Check type="radio" aria-label="radio 1" />
+      </div>
+      
     </>
   );
-};
+  };
 
 export default Radio;

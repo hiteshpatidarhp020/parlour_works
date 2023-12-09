@@ -21,6 +21,7 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+<<<<<<< HEAD
     ],
     "/dashboard": [
       "static/chunks/webpack.js",
@@ -31,6 +32,8 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/login.js"
+=======
+>>>>>>> mparlour
     ]
   },
   "ampFirstPages": []

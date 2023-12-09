@@ -26,39 +26,41 @@
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.checkmarkone {
   position: absolute;
   top: 0;
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #D4D4D4;
+  border:3px solid #CCAA6D;
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: green;
+/* On mouse-over*/
+.container:hover input ~ .checkmarkone {
+  background-color:#eee;
+  border:3px solid #CCAA6D;
 }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+/* When the checkbox is checked,background */
+.container input:checked ~ .checkmarkone {
   background-color: #CCAA6D;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+/* Create the checkmark */
+.checkmarkone:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+/*checkmark when checked */
+.container input:checked ~ .checkmarkone:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.container .checkmarkone:after {
   left: 9px;
   top: 5px;
   width: 5px;
