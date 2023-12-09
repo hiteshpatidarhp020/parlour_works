@@ -1,33 +1,56 @@
+
 .cardouterrow{
     background-color: #242834;
-    border-radius: 20px;
-    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px !important;
 }
 .cardcolone{
     display: flex;
     justify-content: flex-start; 
     background-color: #242834;
-    padding: 10px 10px 10px 10px;
+    /* padding: 10px 10px 10px 10px; */
     color: white;
+
+.cardouterrow {
+  background-color: #242834;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
 }
-.colcontentleft{
-    float: left;
-    color: white;
+.colcontentleft {
+  float: left;
+  color: white;
 }
+.colcontentleft {
+  float: left;
+  color: white;
+}
+
 .colcontentright{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end; 
+    margin: 0px;
+    padding: 0px;
 }
 .rightcol32{
-    margin-left:20px;
+    float: inline-end;
+    margin-right:20px;
     color: white;
 }
 .rightcol31{
+    float: inline-end;
     color: white;
 }
 .cardcoltwo{
+    display: inline-block;
+    justify-content: center;
     margin-left: 15px;
 }
-.headertext{
-    opacity: 50%;
+.colcontentright {
+  display: flex;
+  justify-content: end;
 }
+
+.headertext {
+  opacity: 50%;
+}
+

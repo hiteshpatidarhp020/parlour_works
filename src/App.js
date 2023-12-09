@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
-import "./App.css";
+// src/main.js or src/main.ts
+import Vue from "vue";
+import App from "./App.vue";
+import "./path-to-your-global-styles/global.scss"; // Import global styles
 
-function App() {
-  return <div>App</div>;
-}
-
-export default App;
+new Vue({
+  render: (h) => h(App),
+}).$mount("#app");
