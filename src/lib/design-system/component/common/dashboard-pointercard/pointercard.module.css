@@ -1,0 +1,9 @@
+.maincontainer{
+    background-color: #594AAF;
+    border-radius: 10px;
+    padding: 25px 20px 24px 24px;
+    margin: 0;
+}
+.iconmain{
+    float: inline-end;
+}
