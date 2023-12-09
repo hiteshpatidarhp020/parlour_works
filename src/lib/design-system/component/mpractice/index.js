@@ -11,63 +11,64 @@ import PwCheckbox from "../pw-checkbox";
 import Radio from "../pw-radio";
 import PwDashboardPoniterCard from "../common/dashboard-pointercard";
 
-const MPractice = () =>{
-    const services = [
-        { id: 1, name: "Haircut", gender: "M", price: "200" },
-        { id: 2, name: "maincure", gender: "M", price: "200" },
-        // { id: 3, name: "Manicure", gender: "F", price: "450" },
-        // { id: 4, name: "Shave", gender: "M", price: "200" },
-      ];
+const MPractice = () => {
+  const services = [
+    { id: 1, name: "Haircut", gender: "M", price: "200" },
+    { id: 2, name: "maincure", gender: "M", price: "200" },
+    // { id: 3, name: "Manicure", gender: "F", price: "450" },
+    // { id: 4, name: "Shave", gender: "M", price: "200" },
+  ];
 
-      const labels = [
-        { id: 1, name1: "Haircut"},
-        { id: 2, name1: "Haircut"},
-        { id: 3, name1: "Haircut"},
-        { id: 4, name1: "Haircut"},
-      ];
+  const labels = [
+    { id: 1, name1: "Haircut" },
+    { id: 2, name1: "Haircut" },
+    { id: 3, name1: "Haircut" },
+    { id: 4, name1: "Haircut" },
+  ];
 
-      const checkboxes = [
-        { id: 1, value1: "Price is inclusive of GST"},
-        { id: 2, value2: "Price"},
-      ];
+  const checkboxes = [
+    { id: 1, value1: "Price is inclusive of GST" },
+    { id: 2, value2: "Price" },
+  ];
 
-      const cardColor ="red";
-    return(
-        <>
-        <Radio labels={labels} />
+  const cardColor = "red";
+  return (
+    <>
+      <Radio labels={labels} />
 
-        {/* <PwDivider
+      {/* <PwDivider
          marginTop="30px" 
          marginBottom="30px"/> */}
 
-        {/* <PwKBLogo  /> */}
+      {/* <PwKBLogo  /> */}
 
-        {/* <PwGreenflag 
+      {/* <PwGreenflag 
         OffersText="Tranding" 
         background="green" 
         width="70px"/> */}
 
-        {/* <ManageCategory 
+      {/* <ManageCategory 
         labelHead="HairSpa" 
         labelDiscript="Best salon in area" marginBottom="30px" marginRight="20px"/> */}
 
-        {/* <Servicecard 
+      {/* <Servicecard 
         services={services} 
         labelHeading="Hair Spa" 
         labelDiscription="Best Salon In The Area"/> */}
-    
-        {/* <PwImage 
+
+      {/* <PwImage 
         src="/images/dashboard/hairspa.png"
         width="20%"
         height="20%"/> */}
 
+      <PwCheckbox checkboxes={checkboxes} />
 
-         <PwCheckbox 
-        checkboxes={checkboxes}/>
-
-        <PwDashboardPoniterCard labelOne="Total Business" labelTwo="17500" colors={cardColor}/>
-
-        </> 
-    )
+      <PwDashboardPoniterCard
+        labelOne="Total Business"
+        labelTwo="17500"
+        colors="red"
+      />
+    </>
+  );
 };
 export default MPractice;
