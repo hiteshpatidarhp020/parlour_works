@@ -4,7 +4,7 @@ const PwProfileLogo = () => {
     <>
       <div className={styles.logoback}>
         <div className={styles.logotext}>
-          <p>KB</p>
+          <p>PLG</p>
         </div>
       </div>
     </>

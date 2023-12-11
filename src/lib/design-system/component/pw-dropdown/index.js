@@ -60,7 +60,7 @@ import PwText from "../pw-text";
 import IcVectordropdown from "../../icons/IcVecterdrop";
 
 const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
-  const [selectedItem, setSelectedItem] = useState("Select");
+  const [selectedItem, setSelectedItem] = useState("Trinity salon,Kharadi");
 
   const handleDropdownSelect = (eventKey, event) => {
     setSelectedItem(eventKey);
