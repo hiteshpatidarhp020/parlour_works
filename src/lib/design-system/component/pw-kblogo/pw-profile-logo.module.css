@@ -1,8 +1,8 @@
 .logoback{
-    background-color: #272732;
+    background-color: #343948;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
 }
 .logotext{
@@ -10,6 +10,6 @@
     font-size: 14px;
     color: white;
     position: absolute;
-    top: -7px;
-    margin-left: 5px;
+    top: 8px;
+    margin-left: 6px;
 }

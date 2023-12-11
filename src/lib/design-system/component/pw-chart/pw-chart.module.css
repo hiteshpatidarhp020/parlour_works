@@ -1,0 +1,39 @@
+.chartSection {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+.verticalLine {
+  position: absolute;
+  bottom: 50px;
+  border-left: 1px solid #616470;
+  height: 80%;
+  left: 70px;
+}
+.verticalLineChart {
+  position: absolute;
+  bottom: 50px;
+  border-left: 1px solid #616470;
+  height: 80%;
+  left: 50px;
+}
+.chartContainer {
+  background-color: #242834;
+  border-radius: 10px;
+  box-shadow: 0px 9px 16px 0px #16161c;
+  overflow: hidden;
+}
+.leftText {
+  position: absolute;
+  left: -20px;
+  bottom: 80px;
+  color: white;
+  transform: rotate(-90deg);
+}
+.rightText {
+  position: absolute;
+  right: -10px;
+  bottom: 70px;
+  color: white;
+  transform: rotate(-90deg);
+}

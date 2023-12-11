@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tabs, Tab } from "react-bootstrap";
 // import "./sale.css";
 import styles from "./sale-tabe.module.css";
+import PwChart from "../../pw-chart";
 
 const SaleTabe = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -21,6 +22,7 @@ const SaleTabe = () => {
         </Tab>
         <Tab className={styles.tabsitems} eventKey="tab3" title="Tab 3sdsf">
           <p>Content for Tab 3</p>
+          <PwChart />
         </Tab>
       </Tabs>
     </div>
