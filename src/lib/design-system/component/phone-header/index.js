@@ -6,21 +6,35 @@ import IcAlert from "../../icons/IcAlert";
 import PwSpace from "../pw-space";
 import PwKBLogo from "../pw-kblogo";
 import SaleTabe from "./sale-tabe";
+import PwText from "../pw-text";
+import PwDropdown from "../pw-dropdown";
+import PwProfileLogo from "../pw-kblogo";
+import IcPhoneHome from "../../icons/IcPhoneHome";
+import IcParlourLogo from "../../icons/IcParlourLogo";
+import IcPhoneLogo from "../../icons/IcPhoneLogo";
 
 const PhoneHeader = () => {
   return (
     <div className={`${styles.pheadermain} px-4`}>
       <Navbar className={` ${styles.pheadersection}`}>
         <Navbar.Collapse className="align-items-start">
-          <div>Logo</div>
+          <PwIcon ic={<IcPhoneLogo />}/>
           <Container>
-            <div>sdfdsdafdf adfsdfgfdg</div>
-            <div>sdfdsdafd f</div>
+          <PwIcon className={styles.parlouricon} ic={<IcParlourLogo/>}/>
+          <PwDropdown
+          // width="157px"
+          className={styles.drop}
+          height="40px"
+          kind="secondary"
+          dropItems={["vivo", "iphone", "laptop", "Hp"]}
+          />
           </Container>
         </Navbar.Collapse>
 
         <Navbar.Collapse className="justify-content-end">
-          <PwKBLogo />
+          <div className={styles.proic}>
+          <PwProfileLogo />
+          </div>
         </Navbar.Collapse>
       </Navbar>
       <PwSpace value="30px" />

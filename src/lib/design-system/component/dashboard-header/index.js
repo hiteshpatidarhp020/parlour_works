@@ -11,12 +11,12 @@ const Header = () => {
     <Navbar collapseOnSelect expand="lg" className={styles.headermain}>
       <Nav className="me-auto"></Nav>
       <Nav className="d-flex">
-        <Nav.Link className={styles.headercon} eventKey={2} href="#memes">
+        <Nav.Link className="d-flex" eventKey={2} href="#memes">
           <PwButton label="New sale" kind="primary" className={styles.buttonmain}/>
           <PwDropdown
         // width="157px"
         className={styles.drop}
-        height="50px"
+        height="40px"
         kind="secondary"
         dropItems={["vivo", "iphone", "laptop", "Hp"]}
       />

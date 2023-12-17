@@ -4,7 +4,12 @@
 .tabsitems {
   position: absolute;
   top: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: DM sans-serif;
+  color: white;
 }
+
 .handleTabSelect {
   display: flex;
   justify-content: space-between;

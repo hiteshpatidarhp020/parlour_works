@@ -18,7 +18,7 @@
 .sale-tabe_pwslidercontainer__uxPW5 .nav-link.active {
   border: none !important;
   outline-color: transparent !important;
-  border-bottom: 2px solid red !important;
+  border-bottom: 2px solid #ccaa6d !important;
   background-color: transparent !important;
 }
 ////////////////////////////  modal css Phone Header end
@@ -171,3 +171,17 @@
 .dropdown-menu {
   --bs-dropdown-link-active-bg: #343948;
 }
+.dropdown-toggle.btn.btn-secondary{
+  --custom-border-bottom: 5px solid none !important;
+}
+
+//phone view css
+.nav-link.active{
+  // color: #ccaa6d;
+  color:#ccaa6d ;
+}
+.nav-link{
+  color: white ;
+}
+//    color: var(--bs-nav-link-color);
+// var(--bs-nav-link-color)

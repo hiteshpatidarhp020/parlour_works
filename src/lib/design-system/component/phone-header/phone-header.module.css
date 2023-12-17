@@ -1,11 +1,25 @@
 .pheadermain {
   /* background-color: #2c303f; */
-  background-color: yellow;
+  background-color: #2C303F ;
   position: absolute;
   top: 0;
   z-index: 9999;
   width: 100%;
   border-radius: 0 0 20px 20px;
+}
+.pheadersection{
+    margin-top: 15px;
+}
+.parlouricon{
+  width: 30px;
+  height: 10px;
+  margin-bottom:  25px;
+}
+.drop{
+  margin-bottom: 0px;
+}
+.proic{
+  margin-top: 15px;
 }
 
 @media (min-width: 769px) {
