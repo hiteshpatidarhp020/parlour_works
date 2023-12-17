@@ -1,33 +1,54 @@
 import React, { useState } from "react";
-import { Tabs, Tab } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import styles from "./pw-slider.module.css";
-import PwChart from "../pw-chart";
+import Sale from "../../../v1/components/dashboard/home-dashboard/sale";
 
 const PwSlider = () => {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabSelect = (tabKey) => {
-    setActiveTab(tabKey);
+  const handleTabClick = (index) => {
+    setActiveTab(index);
   };
 
   return (
-    <div className={styles.pwslidercontainer}>
-      <Tabs
-        activeKey={activeTab}
-        onSelect={handleTabSelect}
-        id="switch-tabs"
-        className="mb-3"
-      >
-        <Tab eventKey="tab1" title="Tab 1">
-          <p>Content forsad Tab 1</p>
-        </Tab>
-        <Tab eventKey="tab2" title="Tab 2">
-          <p>Content for Tab 2</p>
-        </Tab>
-        <Tab eventKey="tab3" title="Tab 3">
-          <p>Content for Tab 3 asdfa</p>
-        </Tab>
-      </Tabs>
+    <div className="">
+      <div className={styles.customTabContainer}>
+        <Nav className={styles.tabList}>
+          <Nav.Item
+            className={`${styles.tabItem} ${
+              activeTab === 0 ? styles.activeTab : styles.inactiveTab
+            }`}
+            onClick={() => handleTabClick(0)}
+          >
+            Sale
+          </Nav.Item>
+          <Nav.Item
+            className={`${styles.tabItem} ${
+              activeTab === 1 ? styles.activeTab : styles.inactiveTab
+            }`}
+            onClick={() => handleTabClick(1)}
+          >
+            Staff
+          </Nav.Item>
+          <Nav.Item
+            className={`${styles.tabItem} ${
+              activeTab === 2 ? styles.activeTab : styles.inactiveTab
+            }`}
+            onClick={() => handleTabClick(2)}
+          >
+            Customer
+          </Nav.Item>
+        </Nav>
+      </div>
+      <div className={styles.tabContent}>
+        {activeTab === 0 && (
+          <div>
+            <Sale />
+          </div>
+        )}
+        {activeTab === 1 && <p>Content for Tab 2</p>}
+        {activeTab === 2 && <p>Content for Tab 3</p>}
+      </div>
     </div>
   );
 };

@@ -96,7 +96,7 @@ function PwLineChart() {
   });
 
   return (
-    <div>
+    <div className="position-relative">
       <div className={`${styles.chartContainer} ${styles.chartSection}`}>
         <ReactApexChart
           options={state.options}

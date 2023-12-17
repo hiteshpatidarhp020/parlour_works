@@ -59,8 +59,15 @@ import { useState } from "react";
 import PwText from "../pw-text";
 import IcVectordropdown from "../../icons/IcVecterdrop";
 
-const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
-  const [selectedItem, setSelectedItem] = useState("Trinity salon,Kharadi");
+const PwDropdown = ({
+  marginBottom = "20px",
+  width,
+  state,
+  stateConfig,
+  kind,
+  dropItems,
+}) => {
+  const [selectedItem, setSelectedItem] = useState("Trinity");
 
   const handleDropdownSelect = (eventKey, event) => {
     setSelectedItem(eventKey);
@@ -80,13 +87,15 @@ const PwDropdown = ({ width, state, stateConfig, kind, dropItems }) => {
         state && selectedItem === "Select" ? "#bb321f" : "",
     };
   }
-
+  const dropsection = css`
+    margin-bottom: ${marginBottom};
+  `;
   const dropMain = css`
     width: ${width};
   `;
 
   return (
-    <div className="dropsection">
+    <div className="dropsection" css={dropsection}>
       <Dropdown
         css={dropMain}
         data-bs-theme="dark"
