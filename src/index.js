@@ -11,6 +11,7 @@ import PhoneHeader from "./lib/design-system/component/phone-header";
 import PhoneFooter from "./lib/design-system/component/phone-footer";
 import styles from "../src/lib/v1/components/dashboard/dashboard.module.css"
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "../globels.scss";
@@ -23,6 +24,7 @@ root.render(
       <div>
         {/* <Practice /> */}
         <Sidebar />
+
         <div className={styles.sidebarnone}>
           <Header />
         </div>
@@ -30,6 +32,7 @@ root.render(
           <PhoneHeader />
           <PhoneFooter />
         </div>
+        
       </div>
     </div>
     </div>

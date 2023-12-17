@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div>
       <div>
-        {/*<Practice />*/}
+        {/* <MPractice /> */}
         <Sidebar />
         <div className={styles.sidebarnone}>
           <Header />

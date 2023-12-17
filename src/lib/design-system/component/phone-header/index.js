@@ -12,6 +12,7 @@ import PwProfileLogo from "../pw-kblogo";
 import IcPhoneHome from "../../icons/IcPhoneHome";
 import IcParlourLogo from "../../icons/IcParlourLogo";
 import IcPhoneLogo from "../../icons/IcPhoneLogo";
+import PwLink from "../pw-link";
 
 const PhoneHeader = () => {
   return (
@@ -28,6 +29,7 @@ const PhoneHeader = () => {
           kind="secondary"
           dropItems={["vivo", "iphone", "laptop", "Hp"]}
           />
+          <PwLink linkprop="View Calender "/>
           </Container>
         </Navbar.Collapse>
 

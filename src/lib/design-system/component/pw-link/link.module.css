@@ -1,0 +1,9 @@
+.linkbody{
+    display: flex;
+}
+.linkbody a{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: DM sans-serif;
+    color: #CCAA6D;
+}

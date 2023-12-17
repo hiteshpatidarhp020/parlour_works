@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import "./manage-category.css";
+import "./manage-category.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 import PwText from "../../pw-text";
 import PwSpace from "../../pw-space";
