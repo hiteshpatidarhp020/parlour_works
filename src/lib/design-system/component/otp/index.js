@@ -5,8 +5,6 @@ import PwText from "../pw-text";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PwSlider from "../pw-slider/slider";
 
-import PwChart from "../pw-chart";
-
 const Otp = () => {
   const [timer, setTimer] = useState(10);
   const [showTimer, setShowTimer] = useState(true);
@@ -75,7 +73,6 @@ const Otp = () => {
 
   return (
     <div className="mt-5">
-      <PwChart />
       <div className={style.otpmain}>
         {[0, 1, 2, 3].map((index) => (
           <input
@@ -102,7 +99,6 @@ const Otp = () => {
         ></PwText>
       )}
       <button onClick={redirectToPage}>Next</button>
-      <PwSlider />
     </div>
   );
 };

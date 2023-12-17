@@ -3,15 +3,23 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  position: relative;
-  z-index: 99999;
-  background: #2c303f;
-}
-
-.mainsection {
-  position: absolute;
   height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  background: #2c303f;
+  position: relative;
+  z-index: 99999999999999999;
+}
+.tabBar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.mainsection {
+  position: relative;
   top: 0;
+  height: 100vh;
   width: 100%;
 }
 
@@ -37,13 +45,21 @@
   color: white;
 }
 
-.tabContent {
+.tabContentRight {
   padding-top: 40px !important;
   padding: 80px 60px 28px 60px !important;
-  /* background-color: aqua; */
   background: #191921;
+  height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  z-index: 99999999;
 }
 
+.tabContentRight::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 @media (max-width: 768px) {
   .tabBar {
     display: none;

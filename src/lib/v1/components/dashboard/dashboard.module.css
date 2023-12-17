@@ -4,7 +4,18 @@
   z-index: 99999;
   width: 100%;
 }
-
+.maindas {
+  /* position: relative; */
+  /* z-index: 99999; */
+  /* height: 100vh; */
+  background-color: green;
+}
+.sidebarnone {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999999;
+}
 @media (max-width: 769px) {
   .sidebarnone {
     display: none;
@@ -12,6 +23,11 @@
 }
 @media (min-width: 769px) {
   .header {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .sidebarSection {
     display: none;
   }
 }
