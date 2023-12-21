@@ -96,14 +96,16 @@ function PwLineChart() {
   });
 
   return (
-    <div className={`${styles.chartContainer} ${styles.chartSection}`}>
-      <ReactApexChart
-        options={state.options}
-        series={state.series}
-        type="line"
-        height={350}
-        className="p-0 m-0"
-      />
+    <div className="position-relative">
+      <div className={`${styles.chartContainer} ${styles.chartSection}`}>
+        <ReactApexChart
+          options={state.options}
+          series={state.series}
+          type="line"
+          height={350}
+          className="p-0 m-0"
+        />
+      </div>
       <div className={styles.verticalLineChart}></div>
     </div>
   );

@@ -165,7 +165,7 @@
 }
 .dropsection {
   position: relative;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .dropdown-menu {
@@ -185,3 +185,9 @@
 }
 //    color: var(--bs-nav-link-color);
 // var(--bs-nav-link-color)
+
+//pwlink css
+a {
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+  text-decoration: none;
+}

@@ -5,10 +5,13 @@ import Sidebar from "../../../design-system/component/side-bar";
 import styles from "./dashboard.module.css";
 const Dashboard = () => {
   return (
-    <div>
+    <div className={styles.maindas}>
       <div>
-        {/* <MPractice /> */}
-        <Sidebar />
+        {/*<Practice />*/}
+
+        <div className={styles.sidebarSection}>
+          <Sidebar />
+        </div>
         <div className={styles.sidebarnone}>
           <Header />
         </div>

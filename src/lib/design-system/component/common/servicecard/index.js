@@ -1,5 +1,5 @@
 import { Col, Image, Row } from "react-bootstrap";
-import "./servicecard.css";
+// import "./servicecard.css";
 import PwText from "../../pw-text";
 import PwDivider from "../../pw-divider";
 import PwSpace from "../../pw-space";

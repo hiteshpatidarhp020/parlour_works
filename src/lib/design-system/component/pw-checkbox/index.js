@@ -1,4 +1,4 @@
-import "./pw-checkbox.css"
+// import "./pw-checkbox.css"
 
 const PwCheckbox=({checkboxes})=> {
   if (!checkboxes || !Array.isArray(checkboxes)) {

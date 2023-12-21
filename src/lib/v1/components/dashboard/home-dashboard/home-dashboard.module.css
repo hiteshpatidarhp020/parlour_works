@@ -1,0 +1,17 @@
+.tabSection {
+  /* position: fixed; */
+  /* top: 50px; */
+
+  width: 100%;
+}
+.titleSection {
+  /* background-color: green;
+  position: fixed;
+  top: 100px;
+  width: 100%; */
+}
+@media (max-width: 769px) {
+  .titleSection {
+    display: none;
+  }
+}

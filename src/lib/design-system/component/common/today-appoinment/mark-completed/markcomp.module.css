@@ -1,0 +1,38 @@
+.markmain{
+    background-color: #242834;
+    border: 2px solid #303645;
+    padding: 15px 10px 10px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.starttext{
+    color:white;
+}
+.timing{
+    color:#9E9E9E;
+}
+.checktext{
+    color: #9E9E9E;
+    margin-top:5px ;
+}
+.mark{
+    background-color: #343948;
+    width: 91px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px bold white ;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    float:left;
+}
+.markbox{
+    display: flex;
+    justify-content: right;
+}
+.marktext{
+    color: white;
+}

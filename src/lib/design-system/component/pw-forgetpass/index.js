@@ -1,5 +1,5 @@
 import PwText from "../pw-text";
-import "./pw-forgetpass.css";
+// import "./pw-forgetpass.css";
 
 const PwForgetpass = ()=>{
     return(

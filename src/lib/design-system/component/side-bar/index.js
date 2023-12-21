@@ -20,6 +20,7 @@ import IcAppDetailsIcon from "../../icons/IcAppDetailIcon";
 import IcCampaignIcon from "../../icons/IcCampaignIcon";
 import IcSettingIcon from "../../icons/IcSettingIcon";
 import IcParlourLogo from "../../icons/IcParlourLogo";
+import PwSpace from "../pw-space";
 
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -34,7 +35,7 @@ const Sidebar = () => {
         <Col md={2} className={styles.tabBar}>
           <div className={styles.tabcontent}>
             <div className={`${styles.tab} mt-3 mb-5`}>
-              <PwIcon ic={<IcParlourLogo/>}/>
+              <PwIcon ic={<IcParlourLogo />} />
             </div>
             <div
               className={`${styles.tab} ${
@@ -43,11 +44,13 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab1")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcDashboardIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Deshboard" appearance="body_m_regular" />
+                <PwIcon ic={<IcDashboardIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Deshboard"
+                  appearance="body_m_regular"
+                />
               </div>
-
-              
             </div>
             <div
               className={`${styles.tab} ${
@@ -56,8 +59,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab2")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcReportsIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Reports" appearance="body_m_regular" />
+                <PwIcon ic={<IcReportsIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Reports"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
             <div
@@ -67,8 +74,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab3")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcServiceIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Service" appearance="body_m_regular" />
+                <PwIcon ic={<IcServiceIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Service"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -79,8 +90,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab4")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcPaymentIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Payment Modes" appearance="body_m_regular" />
+                <PwIcon ic={<IcPaymentIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Payment Modes"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -91,8 +106,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab5")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcMyStaffIcon/>}/>
-                <PwText className="ms-3 mt-1" text="MyStaff" appearance="body_m_regular" />
+                <PwIcon ic={<IcMyStaffIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="MyStaff"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -103,8 +122,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab6")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcMyStoreIcon/>}/>
-                <PwText className="ms-3 mt-1" text="MyStores" appearance="body_m_regular" />
+                <PwIcon ic={<IcMyStoreIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="MyStores"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -115,8 +138,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab7")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcSettingIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Settings" appearance="body_m_regular" />
+                <PwIcon ic={<IcSettingIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Settings"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -127,8 +154,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab8")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcMyStaffIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Referrals" appearance="body_m_regular" />
+                <PwIcon ic={<IcMyStaffIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Referrals"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -139,8 +170,12 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab9")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcAppDetailsIcon/>}/>
-                <PwText className="ms-3 mt-1" text="App Details" appearance="body_m_regular" />
+                <PwIcon ic={<IcAppDetailsIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="App Details"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
 
@@ -151,18 +186,23 @@ const Sidebar = () => {
               onClick={() => handleTabClick("tab10")}
             >
               <div className="d-flex ">
-                <PwIcon ic={<IcCampaignIcon/>}/>
-                <PwText className="ms-3 mt-1" text="Campaigns" appearance="body_m_regular" />
+                <PwIcon ic={<IcCampaignIcon />} />
+                <PwText
+                  className="ms-3 mt-1"
+                  text="Campaigns"
+                  appearance="body_m_regular"
+                />
               </div>
             </div>
           </div>
         </Col>
 
-        <Col md={10} className={`${styles.tabContent} `}>
+        <Col md={10} className={`${styles.tabContentRight} `}>
           <div>
             {activeTab === "tab1" && <HomDashboard />}
             {activeTab === "tab2" && <Reports />}
             {activeTab === "tab3" && <Service />}
+
             {/* {activeTab === "tab4" && <PaymentModes />} */}
             {/* {activeTab === "tab5" && <MyStaff />}
             {activeTab === "tab6" && <MyStores />}
@@ -170,7 +210,6 @@ const Sidebar = () => {
             {activeTab === "tab8" && <Referrals />}
             {activeTab === "tab9" && <AppDetails />}
             {activeTab === "tab10" && <Campaigns />} */}
-           
           </div>
         </Col>
       </Row>

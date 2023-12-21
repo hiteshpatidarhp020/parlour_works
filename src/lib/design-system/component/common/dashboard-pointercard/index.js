@@ -8,10 +8,8 @@ import IcDashCardOne from "../../../icons/IcDashCardone";
 import { css } from "@emotion/react";
 const PwDashboardPoniterCard = ({
   background = "red",
-
   labelOne,
   labelTwo,
-  colorcard,
 }) => {
   const dashcart = css`
     background-color: ${background};

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import React, { Component } from "react";
-import "./pw-divider.css";
+// import "./pw-divider.css";
 
 const PwDivider = ({marginTop,marginBottom}) => {
     const Dividertopbottom = {

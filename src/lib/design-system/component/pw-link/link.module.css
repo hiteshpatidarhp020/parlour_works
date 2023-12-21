@@ -1,9 +1,14 @@
 .linkbody{
     display: flex;
+    gap:5px;
 }
 .linkbody a{
-    font-size: 14px;
-    font-weight: 500;
-    font-family: DM sans-serif;
-    color: #CCAA6D;
+color:#CCAA6D ;
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+font-family: DM sans-serif;
 }
+/* .linkbody.linkicon {
+    top:0px;
+} */

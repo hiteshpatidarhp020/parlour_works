@@ -10,20 +10,22 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className={styles.headermain}>
       <Nav className="me-auto"></Nav>
-      <Nav className="d-flex">
-        <Nav.Link className="d-flex" eventKey={2} href="#memes">
-          <PwButton label="New sale" kind="primary" className={styles.buttonmain}/>
+      <Nav className={styles.rightSide}>
+        <div className={styles.headercon} eventKey={2} href="#memes">
+          <PwButton
+            label="New sale"
+            kind="primary"
+            className={styles.buttonmain}
+          />
           <PwDropdown
-        // width="157px"
-        className={styles.drop}
-        height="40px"
-        kind="secondary"
-        dropItems={["vivo", "iphone", "laptop", "Hp"]}
-      />
-      <div className={styles.logomain}>
-          <PwProfileLogo />
+            width="210px"
+            marginBottom="0"
+            dropItems={["vivo", "iphone", "laptop", "Hp"]}
+          />
+          <div className={styles.logomain}>
+            <PwProfileLogo />
           </div>
-        </Nav.Link>
+        </div>
       </Nav>
     </Navbar>
   );
