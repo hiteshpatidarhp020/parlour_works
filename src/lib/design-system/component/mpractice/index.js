@@ -1,14 +1,14 @@
 import PwDivider from "../pw-divider";
-import PwGreenflag from "../pw-greenflag";
+
 import PwKBLogo from "../pw-kblogo";
 import Servicecard from "../common/servicecard";
 import ManageCategory from "../common/manage-category";
 import PwImage from "../pw-image";
 import IcPlus from "../../icons/IcPlus";
 import IcService from "../../icons/IcService";
-import PwCheckbox from "../pw-checkbox";
+
 // import styled from "./mpractice.module.css";
-import Radio from "../pw-radio";
+
 import PwDashboardPoniterCard from "../common/dashboard-pointercard";
 
 const MPractice = () => {
@@ -34,7 +34,7 @@ const MPractice = () => {
   const cardColor = "red";
   return (
     <>
-      <Radio labels={labels} />
+      {/*<Radio labels={labels} />*/}
 
       {/* <PwDivider
          marginTop="30px" 
@@ -61,7 +61,7 @@ const MPractice = () => {
         width="20%"
         height="20%"/> */}
 
-      <PwCheckbox checkboxes={checkboxes} />
+      {/*<PwCheckbox checkboxes={checkboxes} />*/}
 
       <PwDashboardPoniterCard
         labelOne="Total Business"

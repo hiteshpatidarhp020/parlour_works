@@ -8,7 +8,7 @@ import IcDashCardOne from "../../../icons/IcDashCardone";
 import { css } from "@emotion/react";
 const PwDashboardPoniterCard = ({
   background = "red",
-
+  width,
   labelOne,
   labelTwo,
   colorcard,
@@ -18,10 +18,11 @@ const PwDashboardPoniterCard = ({
     border-radius: 10px;
     padding: 25px 20px 24px 24px;
     margin: 0;
+    width: ${width};
   `;
   return (
     <div>
-      <div css={dashcart} style={{ width: "100%" }}>
+      <div css={dashcart}>
         <Row className={styles.maincontainer}>
           <Col xs={10} md={8}>
             <PwText

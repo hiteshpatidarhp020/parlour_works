@@ -10,11 +10,34 @@
   /* height: 100vh; */
   background-color: green;
 }
+.manageCategories {
+  /* background: red; */
+  background: #191921;
+  height: 100%;
+  width: 81%;
+  position: fixed;
+  top: 56px;
+  left: 16.8%;
+}
+.manageMain {
+  padding-left: 36px;
+}
+.buttonSection {
+  display: flex;
+  position: absolute;
+  border-bottom: 0px !important;
+  right: 22px;
+  bottom: 110px;
+  gap: 13px;
+}
 .sidebarnone {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999999999;
+}
+.rowService {
+  padding-bottom: 70px;
 }
 @media (max-width: 769px) {
   .sidebarnone {

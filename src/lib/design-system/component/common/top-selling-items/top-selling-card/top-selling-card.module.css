@@ -1,0 +1,32 @@
+.sellingCardMain {
+  padding: 10px 12px 11px 20px;
+  background-color: #191921;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+.dropSection {
+  height: 34px;
+  padding: 0;
+}
+.itemsMain {
+  padding: 11px 12px 22px 20px;
+  border-radius: 0 0 10px 10px;
+  background: #20242e;
+}
+.itemsSection {
+  border-bottom: 1px solid #303544;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.qpgSection {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+.qpgSectionCircle {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+}
