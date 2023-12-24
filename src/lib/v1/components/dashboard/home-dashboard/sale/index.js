@@ -4,6 +4,7 @@ import PwChart from "../../../../../design-system/component/pw-chart";
 import PwLineChart from "../../../../../design-system/component/pw-chart/line-chart";
 import PwSpace from "../../../../../design-system/component/pw-space";
 import UpcomingAppointmentsSection from "../../../../../design-system/component/common/up-appointments-section";
+import TopSellingItems from "../../../../../design-system/component/common/top-selling-items";
 
 const Sale = () => {
   return (
@@ -49,10 +50,18 @@ const Sale = () => {
         </Col>
       </Row>
       <Container className="p-0 m-0">
-        <UpcomingAppointmentsSection />
+        <Row>
+          <Col>
+            <UpcomingAppointmentsSection />
+          </Col>
+          <Col>
+            <UpcomingAppointmentsSection />
+          </Col>
+        </Row>
       </Container>
       <PwChart />
       <PwLineChart />
+      <TopSellingItems />
       <PwSpace value="90px" />
     </div>
   );

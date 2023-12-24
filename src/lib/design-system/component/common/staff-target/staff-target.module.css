@@ -1,0 +1,17 @@
+.staffTargetMain {
+  border-radius: 10px;
+  background: #242834;
+  box-shadow: 0px 9px 16px 0px #16161c;
+  color: white;
+  padding: 26px 31px 13px 31px;
+  margin-top: 19px;
+}
+.targetsSection {
+  margin-right: 17px;
+  border-radius: 10px;
+  background: #20242e;
+  padding: 22px 0 19px 31px;
+}
+.targetsSection:last-child {
+  margin-right: 0px;
+}

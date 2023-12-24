@@ -1,0 +1,29 @@
+.maximumBusinessMain {
+  border-radius: 10px;
+  background: #242834;
+  box-shadow: 0px 9px 16px 0px #16161c;
+  color: white;
+  padding: 26px 31px 13px 31px;
+  height: 358px;
+  overflow: auto;
+}
+.rankSection {
+  margin-bottom: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 44px; */
+  margin: 0;
+  border-radius: 10px;
+  background: #20242e;
+  padding: 5px;
+  padding-left: 21px;
+}
+.rankTag {
+  gap: 4px;
+  border-radius: 10px;
+  padding: 8px 19px;
+  background: #373e51;
+  display: flex;
+  align-items: center;
+}

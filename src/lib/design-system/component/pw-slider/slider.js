@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import styles from "./pw-slider.module.css";
 import Sale from "../../../v1/components/dashboard/home-dashboard/sale";
+import Staff from "../../../v1/components/dashboard/home-dashboard/staff";
 
 const PwSlider = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -46,7 +47,11 @@ const PwSlider = () => {
             <Sale />
           </div>
         )}
-        {activeTab === 1 && <p>Content for Tab 2</p>}
+        {activeTab === 1 && (
+          <div>
+            <Staff />
+          </div>
+        )}
         {activeTab === 2 && <p>Content for Tab 3</p>}
       </div>
     </div>
