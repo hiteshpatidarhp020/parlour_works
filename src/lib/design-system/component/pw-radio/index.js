@@ -1,5 +1,5 @@
 import React from "react";
-import "./pw-radio.css";
+import styles from "./pw-radio.module.css";
 
 const Radio = ({ labels}) => {
     if (!labels || !Array.isArray(labels)) {
@@ -10,9 +10,9 @@ const Radio = ({ labels}) => {
     <div>
       {labels.map((label) => (
         <div style={{ color: "" }} key={labels.label}>
-      <label class="container">{label.name1}
+      <label className={styles.container}>{label.name1}
       <input type="radio" name="radio" />
-      <span class="checkmark"></span>
+      <span className={styles.checkmark}></span>
       </label>
       
     

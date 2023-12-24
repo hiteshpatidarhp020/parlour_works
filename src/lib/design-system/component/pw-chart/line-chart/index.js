@@ -1,24 +1,33 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import styles from "../pw-chart.module.css";
+import PwDropdown from "../../pw-dropdown";
+import PwText from "../../pw-text";
+import IcChartHeadingIcon from "../../../icons/IcChartHeadingIcon";
+import PwIcon from "../../pw-icon";
+import Radio from "../../pw-radio";
 
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
+const labels = [
+  { id: 1, name1: "Quick Sale" },
+];
+
 
 function PwLineChart() {
   const [state, setState] = useState({
     series: [
       {
         name: "Desktops",
-        data: [300, 400, 505, 1001, 1209, 1402, 1509, 1200, 3208],
+        data: [300, 400, 505, 1001, 1209, 1402, 1509],
         style: {
           width: 1,
         },
       },
       {
         name: "Revenue",
-        data: [488, 551, 775, 1112, 1449, 1662, 1779, 2341, 3548],
+        data: [488, 551, 775, 1112, 1449, 1662, 1779],
         stroke: {
           width: 1,
         },
@@ -67,15 +76,13 @@ function PwLineChart() {
       },
       xaxis: {
         categories: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
+          "Aug 2023",
+          "Sep 2023",
+          "Oct 2023",
+          "Nov 2023",
+          "Dec 2023",
+          "Jan 2024",
+          "Feb 2024",
         ],
         labels: {
           style: {
@@ -98,6 +105,28 @@ function PwLineChart() {
   return (
     <div className="position-relative">
       <div className={`${styles.chartContainer} ${styles.chartSection}`}>
+
+      <div className={styles.chartcontentmain}>
+      <div className={styles.chartheading}>
+      <PwText color="#FFFFFF" text="Summary of Quick Sale v/s Appointments" appearance="body_m_med"/>
+      <PwText color="" text="Summary of Quick Sale v/s Appointments" appearance="body_m_med"/>
+      </div>
+
+      <div className={styles.chartrightsec}>
+      <div className={styles.chartradio}>
+      <Radio labels={labels} />
+      <Radio labels={labels} />
+      </div>
+      <div >
+          <PwDropdown
+            width="157px"
+           marginBottom="0"
+          dropItems={["Monthly", "iphone", "laptop", "Hp"]}
+         />
+       </div>
+       </div>
+       </div>
+
         <ReactApexChart
           options={state.options}
           series={state.series}

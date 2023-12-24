@@ -10,6 +10,7 @@ const PwDashboardPoniterCard = ({
   background = "red",
   labelOne,
   labelTwo,
+  dashicon,
 }) => {
   const dashcart = css`
     background-color: ${background};
@@ -36,7 +37,7 @@ const PwDashboardPoniterCard = ({
             />
           </Col>
           <Col xs={2} md={2}>
-            <PwIcon className={styles.iconmain} ic={<IcDashCardOne />} />
+            <PwIcon className={styles.iconmain} ic={dashicon} />
           </Col>
         </Row>
       </div>

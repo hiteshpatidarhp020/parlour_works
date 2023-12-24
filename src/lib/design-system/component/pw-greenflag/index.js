@@ -1,4 +1,4 @@
-import "./pw-greenflag.css";
+// import "./pw-greenflag.css";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
